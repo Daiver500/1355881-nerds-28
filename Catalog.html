@@ -23,21 +23,64 @@
 
       <main>
     <h1>Магазин готовых шаблонов</h1>
+    <form>
+      сортировать
+      по цене
+      по типу
+      по названию
+    </form>
+
+    <form url="https://echo.htmlacademy.ru/" method="post">
+      <b>Стоимость</b><br>
+      <input type="range" min="1" max="15000"><br>
+       <b>Сетка</b><br>
+      <label><input type="radio" name="net" value="Адаптивная" checked>Адаптивная</label><br>
+      <label><input type="radio" name="net" value="Фиксированная">Фиксированная</label><br>
+      <label><input type="radio" name="net" value="Резиновая">резиновая</label><br><br>
+      <b>Особенности</b><br>
+       <input type="checkbox" name="Слайдер" checked id="slider">
+       <label for="slider">Слайдер</label><br>
+        <input type="checkbox" name="Блок преимуществ" id="block">
+        <label for="block">Блок преимуществ</label><br>
+        <input type="checkbox" name="Новости" checked id="news">
+        <label for="news">Новости</label><br>
+        <input type="checkbox" name="Галерея" id="gallery">
+         <label for="gallery">Галерея</label><br>
+        <input type="checkbox" name="Корзина" id="bin">
+         <label for="bin">Корзина</label><br>
+        <input type="submit" value="показать">
+    </form>
+
+    <section class="pages">
+      <figure class="pages1">
+    <img src="" width="" height="" alt="">
+    <img src="" width="" height="" alt="">
+    <img src="" width="" height="" alt="">
+    <img src="" width="" height="" alt="">
+    </figure>
+    </section>
+
+    <section>
+      <!-- Здесь блок с переходом страниц --> 
+     </section>
+    <section>
+      <!-- Здесь будет карта --> 
+     </section>
      </main>
 
-    <footer>
-        <section>
-          <p class="text5">Давайте дружить, это выгодно!</p>
-           <p class="text2">Скидка 10% для друзей из социальных сетей</p>
-        </section>
-  
-        <section>
-          <ul>
-  <li><a href="vk.com"><img src="img/logo.jpg" width="78,25" height="78,25" alt="логотип вконтакте"></a></li>
-  <li><a href="facebook.com"><img src="img/logo.jpg" width="78,25" height="78,25" alt="логотип facebook"></a></li>
-  <li><a href="instagram.com"><img src="img/logo.jpg" width="78,25" height="78,25" alt="логотип instagram"></a></li>
-          </ul>
-  </section>
-      </footer>
+     <footer>
+      <section>
+        <p class="text5">Давайте дружить, это выгодно!</p>
+         <p class="text2">Скидка 10% для друзей из социальных сетей</p>
+      </section>
+
+      <section>
+        <ul>
+<li><a href="vk.com"><img src="img/logo.jpg" width="78,25" height="78,25" alt="логотип вконтакте"></a></li>
+<li><a href="facebook.com"><img src="img/logo.jpg" width="78,25" height="78,25" alt="логотип facebook"></a></li>
+<li><a href="instagram.com"><img src="img/logo.jpg" width="78,25" height="78,25" alt="логотип instagram"></a></li>
+        </ul>
+</section>
+          </footer>
 </body>
 </html>
