@@ -33,22 +33,42 @@
         </fieldset>
         <fieldset>
           <legend> Сетка</legend>
-          <label><input type="radio" name="net" value="Адаптивная" checked>Адаптивная</label>
-          <label><input type="radio" name="net" value="Фиксированная">Фиксированная</label>
-          <label><input type="radio" name="net" value="Резиновая">резиновая</label>
+          <ul>
+            <li>
+              <label><input type="radio" name="net" value="Адаптивная" checked>Адаптивная</label>
+            </li>
+            <li>
+              <label><input type="radio" name="net" value="Фиксированная">Фиксированная</label>
+            </li>
+            <li>
+              <label><input type="radio" name="net" value="Резиновая">резиновая</label>
+            </li>
+          </ul>
          </fieldset>
          <fieldset>
            <legend>Особенности</legend>
-           <input type="checkbox" name="Слайдер" checked id="slider">
-           <label for="slider">Слайдер</label><br>
-           <input type="checkbox" name="Блок преимуществ" id="block">
-           <label for="block">Блок преимуществ</label><br>
-           <input type="checkbox" name="Новости" checked id="news">
-           <label for="news">Новости</label><br>
-           <input type="checkbox" name="Галерея" id="gallery">
-           <label for="gallery">Галерея</label><br>
-           <input type="checkbox" name="Корзина" id="bin">
-          <label for="bin">Корзина</label><br>
+           <ul>
+             <li>
+               <input type="checkbox" name="Слайдер" checked id="slider">
+               <label for="slider">Слайдер</label><br>
+             </li>
+             <li>
+               <input type="checkbox" name="Блок преимуществ" id="block">
+               <label for="block">Блок преимуществ</label><br>
+             </li>
+             <li>
+               <input type="checkbox" name="Новости" checked id="news">
+               <label for="news">Новости</label><br>
+             </li>
+             <li>
+               <input type="checkbox" name="Галерея" id="gallery">
+               <label for="gallery">Галерея</label><br>
+             </li>
+             <li>
+               <input type="checkbox" name="Корзина" id="bin">
+               <label for="bin">Корзина</label><br>
+             </li>
+          </ul>
         </fieldset>
         <button type="button">Показать</button>
       </form>
@@ -171,8 +191,9 @@
       <input type="text" name="name" id="name" placeholder="Имя Фамилия">
       <input type="text" name="email" id="email" placeholder="email@example.com">
       <textarea name="text" rows="10" cols="50" id="comment" placeholder="В свободной форме"></textarea>
+      <button type="submit">Отправить</button><!-- Здесь будет кнопка отправить форму --> 
     </form>
-    <button type="submit">Отправить</button>
+    <button type="submit">Закрыть</button><!-- Здесь будет кнопка закрыть форму --> 
   </section>
 </body>
 </html>
