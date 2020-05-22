@@ -23,7 +23,7 @@
   <main>
     <h1>Магазин готовых шаблонов</h1>
     <section>
-      <h2 class="visually-hidden"></h2>
+      <h2 class="visually-hidden">Фильтр</h2>
       <form url="https://echo.htmlacademy.ru/" method="post">
         <fieldset>
           <legend>Стоимость</legend>
@@ -32,16 +32,19 @@
           <label>до<input type="text" value="15000"></label>
         </fieldset>
         <fieldset>
-          <legend> Сетка</legend>
+          <legend>Сетка</legend>
           <ul>
             <li>
-              <label><input type="radio" name="net" value="Адаптивная" checked>Адаптивная</label>
+              <input type="radio" name="net" value="Адаптивная" checked id="adaptive">
+              <label for="adaptive">Адаптивная</label>
             </li>
             <li>
-              <label><input type="radio" name="net" value="Фиксированная">Фиксированная</label>
+              <input type="radio" name="net" value="Фиксированная" id="fixed">
+              <label for="fixed">Фиксированная</label>
             </li>
             <li>
-              <label><input type="radio" name="net" value="Резиновая">резиновая</label>
+              <input type="radio" name="net" value="Резиновая" id="rubber">
+              <label for="rubber">Резиновая</label>
             </li>
           </ul>
          </fieldset>
@@ -50,23 +53,23 @@
            <ul>
              <li>
                <input type="checkbox" name="Слайдер" checked id="slider">
-               <label for="slider">Слайдер</label><br>
+               <label for="slider">Слайдер</label>
              </li>
              <li>
                <input type="checkbox" name="Блок преимуществ" id="block">
-               <label for="block">Блок преимуществ</label><br>
+               <label for="block">Блок преимуществ</label>
              </li>
              <li>
                <input type="checkbox" name="Новости" checked id="news">
-               <label for="news">Новости</label><br>
+               <label for="news">Новости</label>
              </li>
              <li>
                <input type="checkbox" name="Галерея" id="gallery">
-               <label for="gallery">Галерея</label><br>
+               <label for="gallery">Галерея</label>
              </li>
              <li>
                <input type="checkbox" name="Корзина" id="bin">
-               <label for="bin">Корзина</label><br>
+               <label for="bin">Корзина</label>
              </li>
           </ul>
         </fieldset>
@@ -74,7 +77,7 @@
       </form>
     </section>
     <section>
-      <h2 class="visually-hidden"></h2>
+      <h2 class="visually-hidden">Сортировка</h2>
       <form> <!-- Здесь будет форма фильтра -->
       сортировать
       по цене
@@ -85,7 +88,7 @@
       <a href="#">Вниз</a>
     </section>
     <section>
-      <h2 class="hidden"></h2>
+      <h2 class="hidden">Выбор товара</h2>
       <ul>
         <li>
           <img src="img/sedona.jpg" width="360" height="576" alt="Информационный сайт для туристов">
@@ -113,7 +116,7 @@
             <a href="#">
             <h3>BARBERSHOP</h3>
             </a>
-            <p>Сайт салон красоты. Для мужчин, да.</p>
+            <p>Сайт салона красоты. Для мужчин, да.</p>
             <a href="#">9900</a><!-- Здесь будет кнопка с ценой --> 
           </div>
         </li>
@@ -148,9 +151,7 @@
           </div>
         </li>
       </ul>
-    </section>
-    <section> <!-- Здесь будет навигация по страницам каталога -->  
-      <div class="navigation">
+      <div class="navigation"><!-- Здесь будет навигация по страницам каталога -->  
         <a href="#">1</a>
         <a href="#">2</a>
         <a href="#">3</a>
@@ -184,7 +185,7 @@
     </div>
     <div>
       <p class="text5">Давайте дружить, это выгодно!</p>
-      <p class="text2">Скидка 10% для друзей из социальных сетей</p>
+      <p class="text2">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
   <section><!-- Здесь будет всплывающая форма --> 
@@ -198,7 +199,7 @@
       <textarea name="text" rows="10" cols="50" id="comment" placeholder="В свободной форме"></textarea>
       <button type="submit">Отправить</button><!-- Здесь будет кнопка отправить форму --> 
     </form>
-    <button type="submit">Закрыть</button><!-- Здесь будет кнопка закрыть форму --> 
+    <button type="button">Закрыть</button><!-- Здесь будет кнопка закрыть форму --> 
   </section>
 </body>
 </html>
