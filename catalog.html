@@ -1,0 +1,213 @@
+<!DOCtype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Магазин готовых шаблонов</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">
+      <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии»">
+      </a>
+      <ul>
+        <li><a href="blank.html">Студия</a></li>
+        <li><a href="blank.html">Клиенты</a></li>
+        <li><a>Магазин</a></li>
+        <li><a href="blank.html">Контакты</a></li>
+      </ul>
+      <a href="blank.html">Корзина</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Магазин готовых шаблонов</h1>
+    <section>
+      <h2 class="visually-hidden">Фильтр</h2>
+      <form url="https://echo.htmlacademy.ru/" method="get">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <input type="range" min="1" max="15000" step="1">
+          <label>от<input type="text" value="0"></label>
+          <label>до<input type="text" value="15000"></label>
+        </fieldset>
+        <fieldset>
+          <legend>Сетка</legend>
+          <ul>
+            <li>
+              <input type="radio" name="net" value="Adaptive" checked id="adaptive">
+              <label for="adaptive">Адаптивная</label>
+            </li>
+            <li>
+              <input type="radio" name="net" value="Fixed" id="fixed">
+              <label for="fixed">Фиксированная</label>
+            </li>
+            <li>
+              <input type="radio" name="net" value="Rubber" id="rubber">
+              <label for="rubber">Резиновая</label>
+            </li>
+          </ul>
+         </fieldset>
+         <fieldset>
+           <legend>Особенности</legend>
+           <ul>
+             <li>
+               <input type="checkbox" name="Slider" checked id="slider">
+               <label for="slider">Слайдер</label>
+             </li>
+             <li>
+               <input type="checkbox" name="Advantages" id="block">
+               <label for="block">Блок преимуществ</label>
+             </li>
+             <li>
+               <input type="checkbox" name="News" checked id="news">
+               <label for="news">Новости</label>
+             </li>
+             <li>
+               <input type="checkbox" name="Gallery" id="gallery">
+               <label for="gallery">Галерея</label>
+             </li>
+             <li>
+               <input type="checkbox" name="TrashBin" id="bin">
+               <label for="bin">Корзина</label>
+             </li>
+          </ul>
+        </fieldset>
+        <button type="button">Показать</button>
+      </form>
+    </section>
+    <section><!-- Здесь будет сортировка -->
+      <h2 class="visually-hidden">Сортировка</h2>
+      <h3>сортировать</h3>
+      <ul> 
+        <li>
+          <a href="#">по цене</a>
+        </li>
+        <li>
+          <a href="#">по типу</a>
+        </li>
+        <li>
+          <a href="#">по названию</a>
+        </li>
+      </ul>
+      <a href="#">Вверх</a>
+      <a href="#">Вниз</a>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Выбор товара</h2>
+      <ul>
+        <li>
+          <img src="img/sedona.jpg" width="360" height="576" alt="Информационный сайт для туристов">
+          <div>
+            <a href="#">
+            <h3>SEDONA</h3>
+            </a>
+            <p>Информационнный сайт для туристов</p>
+            <a href="#">9900</a><!-- Здесь будет кнопка с ценой --> 
+          </div>
+        </li>
+        <li>
+          <img src="img/pink.jpg" width="358" height="578" alt="Продуктовый лендинг">
+          <div>
+            <a href="#">
+            <h3>PINK APP</h3>
+            </a>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <a href="#">9900</a><!-- Здесь будет кнопка с ценой --> 
+          </div>
+        </li>
+        <li>
+          <img src="img/barber.jpg" width="358" height="578" alt="Барбершоп">
+          <div>
+            <a href="#">
+            <h3>BARBERSHOP</h3>
+            </a>
+            <p>Сайт салона красоты. Для мужчин, да.</p>
+            <a href="#">9900</a><!-- Здесь будет кнопка с ценой --> 
+          </div>
+        </li>
+        <li>
+          <img src="img/mishka.jpg" width="358" height="578" alt="Интернет-магазин игрушек">
+          <div>
+            <a href="#">
+            <h3>MISHKA</h3>
+            </a>
+            <p>Интернет магазин вязаных игрушек</p>
+            <a href="#">9900</a><!-- Здесь будет кнопка с ценой --> 
+          </div>
+        </li>
+        <li>
+          <img src="img/learn.jpg" width="358" height="578" alt="Повышение квалификации">
+          <div>
+            <a href="#">
+            <h3>A PLUS</h3>
+            </a>
+            <p>Лендинг курсов повышения квалифиакции</p>
+            <a href="#">9900</a><!-- Здесь будет кнопка с ценой -->  
+          </div>
+        </li>
+        <li>
+          <img src="img/kvast.jpg" width="358" height="578" alt="Производитель кваса">
+          <div>
+            <a href="#">
+            <h3>КВАСТ</h3>
+            </a>
+            <p>Промо-сайт производителя крафтового кваса</p>
+            <a href="#">9900</a><!-- Здесь будет кнопка с ценой -->  
+          </div>
+        </li>
+      </ul>
+      <div class="navigation"><!-- Здесь будет навигация по страницам каталога -->  
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <button type="button">Следующая</button>
+      </div>
+    </section>
+    <section>
+      <img src="img/map.jpg" width="1440" height="416" alt="карта"><!-- Здесь будет карта --> 
+      <img src="img/map-marker.png" width="231" height="190" alt="логотип"> <!-- Здесь будет логотип --> 
+      <div><!-- Здесь будет карточка "Напишите нам" --> 
+        <h4>NERDS DESIGN STUDIO</h4>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <a href="tel:78122757575">тел.+7(812) 275-75-75</a>
+        <a href="#">Напишите нам</a><!-- ссылка на всплывающую форму --> 
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <ul>
+        <li>
+          <a href="https://vk.com/"><img src="img/vk-icon.svg" width="26" height="15" alt="логотип вконтакте"></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/"><img src="img/fb-icon.svg" width="15" height="22" alt="логотип facebook"></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/"><img src="img/insta-icon.svg" width="21" height="21" alt="логотип instagram"></a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <p class="text5">Давайте дружить, это выгодно!</p>
+      <p class="text2">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </footer>
+  <section><!-- Здесь будет всплывающая форма --> 
+    <form url="https://echo.htmlacademy.ru/" method="post">
+      <h1>Напишите нам</h1>
+      <label for="name">Ваше имя:</label>
+      <label for="email:">Ваш email:</label>
+      <label for="comment">Текст письма:</label>
+      <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+      <input type="text" name="email" id="email" placeholder="email@example.com">
+      <textarea name="text" rows="10" cols="50" id="comment" placeholder="В свободной форме"></textarea>
+      <button type="submit">Отправить</button><!-- Здесь будет кнопка отправить форму --> 
+    </form>
+    <button type="button">Закрыть</button><!-- Здесь будет кнопка закрыть форму --> 
+  </section>
+</body>
+</html>
+
+
