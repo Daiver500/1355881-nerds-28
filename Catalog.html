@@ -35,15 +35,15 @@
           <legend>Сетка</legend>
           <ul>
             <li>
-              <input type="radio" name="net" value="Адаптивная" checked id="adaptive">
+              <input type="radio" name="net" value="Adaptive" checked id="adaptive">
               <label for="adaptive">Адаптивная</label>
             </li>
             <li>
-              <input type="radio" name="net" value="Фиксированная" id="fixed">
+              <input type="radio" name="net" value="Fixed" id="fixed">
               <label for="fixed">Фиксированная</label>
             </li>
             <li>
-              <input type="radio" name="net" value="Резиновая" id="rubber">
+              <input type="radio" name="net" value="Rubber" id="rubber">
               <label for="rubber">Резиновая</label>
             </li>
           </ul>
@@ -52,23 +52,23 @@
            <legend>Особенности</legend>
            <ul>
              <li>
-               <input type="checkbox" name="Слайдер" checked id="slider">
+               <input type="checkbox" name="Slider" checked id="slider">
                <label for="slider">Слайдер</label>
              </li>
              <li>
-               <input type="checkbox" name="Блок преимуществ" id="block">
+               <input type="checkbox" name="Advantages" id="block">
                <label for="block">Блок преимуществ</label>
              </li>
              <li>
-               <input type="checkbox" name="Новости" checked id="news">
+               <input type="checkbox" name="News" checked id="news">
                <label for="news">Новости</label>
              </li>
              <li>
-               <input type="checkbox" name="Галерея" id="gallery">
+               <input type="checkbox" name="Gallery" id="gallery">
                <label for="gallery">Галерея</label>
              </li>
              <li>
-               <input type="checkbox" name="Корзина" id="bin">
+               <input type="checkbox" name="TrashBin" id="bin">
                <label for="bin">Корзина</label>
              </li>
           </ul>
@@ -76,14 +76,20 @@
         <button type="button">Показать</button>
       </form>
     </section>
-    <section>
+    <section><!-- Здесь будет сортировка -->
       <h2 class="visually-hidden">Сортировка</h2>
-      <form> <!-- Здесь будет форма фильтра -->
-      сортировать
-      по цене
-      по типу
-      по названию
-      </form>
+      <p>сортировать</p>
+      <ul> 
+        <li>
+          <a href="#">по цене</a>
+        </li>
+        <li>
+          <a href="#">по типу</a>
+        </li>
+        <li>
+          <a href="#">по названию</a>
+        </li>
+      </ul>
       <a href="#">Вверх</a>
       <a href="#">Вниз</a>
     </section>
