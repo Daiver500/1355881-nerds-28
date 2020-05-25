@@ -1,0 +1,78 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+:root {
+  --light-grey: #EEEEEE;
+  --medium-grey: #DFDFDF;
+  --dark-grey: #D5D5D5;
+  --black: #000000;
+  --light-red: #FB565A;
+  --medium-red: #E74246;
+  --dark-red: #D7373B;
+  --light-yellow:#EFC849;
+  --medium-yellow:#EAB534;
+  --dark-yellow: #E5A722;
+  --light-green: #00CA74;
+  --medium-green: #00BC6C;
+  --dark-green: #00AA62;
+  --white: #FFFFFF;
+  --dark:#283136;
+}
+
+body {
+  min-width: 1177px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: var(--dark);
+  background-color: var(--white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+font-size: 16px;
+line-height: 30px;
+color: var(--black);
+background-color: var(--light-grey);
+text-transform: uppercase;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a:hover {
+  color: var(--light-red);
+}
+
+.site-navigation a:active {
+  color: var(--black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.slider-text {
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--black);
+}
+
