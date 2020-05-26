@@ -339,6 +339,7 @@ text-transform: uppercase;
 
 .write-button:active  {
   background-color: var(--dark-red);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1); 
 }
 
 .social {
@@ -451,6 +452,26 @@ textarea::-webkit-input-placeholder{
   color: var(--light-red);
   opacity: 0.1;
 }
+
+.shop-border{
+  border-bottom: 2px solid var(--light-red);
+}
+
+.header-back{
+  background-color: var(--light-grey);
+}
+
+.text12{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+
+
+
     
 
 

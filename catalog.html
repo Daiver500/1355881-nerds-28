@@ -9,32 +9,34 @@
 </head>
 <body class="page-body">
   <header>
-    <nav>
+    <nav class="main-navigation">
       <a href="index.html">
       <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии»">
       </a>
       <ul class="site-navigation">
         <li><a href="blank.html">Студия</a></li>
         <li><a href="blank.html">Клиенты</a></li>
-        <li><a>Магазин</a></li>
+        <li><a class="shop-border">Магазин</a></li>
         <li><a href="blank.html">Контакты</a></li>
         <li><a href="blank.html">Корзина</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <h1 class="slider-text">Магазин готовых шаблонов</h1>
+    <div class="header-back">
+      <h1 class="slider-text">Магазин готовых шаблонов</h1>
+    </div>
     <section>
       <h2 class="visually-hidden">Фильтр</h2>
       <form url="https://echo.htmlacademy.ru/" method="get">
         <fieldset>
-          <legend>Стоимость</legend>
+          <legend><span class="text12">Стоимость</span></legend>
           <input type="range" min="1" max="15000" step="1">
           <label>от<input type="text" value="0"></label>
           <label>до<input type="text" value="15000"></label>
         </fieldset>
         <fieldset>
-          <legend>Сетка</legend>
+          <legend><span class="text12">Сетка</span></legend>
           <ul>
             <li>
               <input type="radio" name="net" value="Adaptive" checked id="adaptive">
@@ -51,7 +53,7 @@
           </ul>
          </fieldset>
          <fieldset>
-           <legend>Особенности</legend>
+           <legend></legend><span class="text12">Особенности</span></legend>
            <ul>
              <li>
                <input type="checkbox" name="Slider" checked id="slider">
@@ -80,7 +82,7 @@
     </section>
     <section><!-- Здесь будет сортировка -->
       <h2 class="visually-hidden">Сортировка</h2>
-      <p>сортировать</p>
+      <p>Сортировать</p>
       <ul> 
         <li>
           <a href="#">по цене</a>
@@ -166,14 +168,15 @@
         <button type="button">Следующая</button>
       </div>
     </section>
-    <section>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
       <img src="img/map.jpg" width="1440" height="416" alt="карта"><!-- Здесь будет карта --> 
       <img src="img/map-marker.png" width="231" height="190" alt="логотип"> <!-- Здесь будет логотип --> 
-      <div><!-- Здесь будет карточка "Напишите нам" --> 
-        <h4>NERDS DESIGN STUDIO</h4>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a href="tel:78122757575">тел.+7(812) 275-75-75</a>
-        <a href="#">Напишите нам</a><!-- ссылка на всплывающую форму --> 
+      <div class="contact-us"><!-- Здесь будет карточка "Напишите нам" --> 
+        <h4 class="contacts-header">NERDS DESIGN STUDIO</h4>
+        <p class="text7">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <a class="text7" href="tel:78122757575">тел.+7(812) 275-75-75</a>
+        <a class="write-button" href="#"><span class="click">Напишите нам</span></a><!-- ссылка на всплывающую форму --> 
       </div>
     </section>
   </main>
@@ -197,16 +200,16 @@
   </footer>
   <section><!-- Здесь будет всплывающая форма --> 
     <form url="https://echo.htmlacademy.ru/" method="post">
-      <h1>Напишите нам</h1>
-      <label for="name">Ваше имя:</label>
-      <label for="email:">Ваш email:</label>
-      <label for="comment">Текст письма:</label>
+      <h1 class="text10">Напишите нам</h1>
+      <label for="name"><span class="text11">Ваше имя:</span></label>
+      <label for="email:"><span class="text11">Ваш email:</span></label>
+      <label for="comment"><span class="text11">Текст письма:</span></label>
       <input type="text" name="name" id="name" placeholder="Имя Фамилия">
       <input type="text" name="email" id="email" placeholder="email@example.com">
       <textarea name="text" rows="10" cols="50" id="comment" placeholder="В свободной форме"></textarea>
-      <button class="button popup-button" type="submit">Отправить</button><!-- Здесь будет кнопка отправить форму --> 
+      <button class="popup-button" type="submit">Отправить</button><!-- Здесь будет кнопка отправить форму --> 
     </form>
-    <button class="button close-button" type="button">Закрыть</button><!-- Здесь будет кнопка закрыть форму --> 
+    <button class="close-button" type="button"><img src="img/close-cross.svg" width="21" height="21" alt="закрыть форму отправки"></button><!-- Здесь будет кнопка закрыть форму --> 
   </section>
 </body>
 </html>
