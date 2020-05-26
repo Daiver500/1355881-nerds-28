@@ -587,6 +587,7 @@ input[type="checkbox"]:hover{
 
 input[type="checkbox"]:disabled{
   opacity: 0.1;
+}
 
 .sort {
   list-style: none;
