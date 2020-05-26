@@ -27,6 +27,10 @@
   --dark:#283136;
   --medium-dark: #444444;
   --light-dark: #666666;
+  --for-shop: #4d4d4d;
+  --extra-light-grey: #DFDFDF;
+  --twice-extra-light-grey: #D5D5D5;
+  --for-page-change-shop: #DBDBDB;
 }
 
 body {
@@ -93,6 +97,10 @@ text-transform: uppercase;
   background: var(--light-red);
   border-radius: 3px;
   text-align: center;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 52px;
+  padding-right: 56px;
 }
 
 .slider-button:hover  {
@@ -102,10 +110,6 @@ text-transform: uppercase;
 .slider-button:active  {
   background-color: var(--dark-red);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-}
-
-.click:active{
-  opacity: 0.3;
 }
 
 .service-list {
@@ -138,6 +142,11 @@ text-transform: uppercase;
   border-radius: 3px;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 39px;
+  padding-right: 40px;
+  
 }
 
 .red-button {
@@ -329,8 +338,16 @@ text-transform: uppercase;
   text-transform: uppercase;
   background-color: var(--light-red);
   border-radius: 3px;
-  text-align: center;
   color: var(--white);
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 44px;
+  padding-right: 44px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 211px;
+  margin-bottom: 40px;
 }
 
 .write-button:hover  {
@@ -382,7 +399,6 @@ text-transform: uppercase;
 .social-icon:active{
   background: var(--dark-red);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  opacity: 0.3;
 }
 
 .text8 {
@@ -453,15 +469,11 @@ textarea::-webkit-input-placeholder{
   opacity: 0.1;
 }
 
-.shop-border{
+.shop-border {
   border-bottom: 2px solid var(--light-red);
 }
 
-.header-back{
-  background-color: var(--light-grey);
-}
-
-.text12{
+.text-form{
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -469,9 +481,235 @@ textarea::-webkit-input-placeholder{
   text-transform: uppercase;
 }
 
+.text12 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--black);
+  text-transform: uppercase;
+  text-align: center;
+}
 
+.text12:hover{
+  color: var(--light-red);
+}
 
+.text12:active{
+  opacity: 0.3;
+  color: var(--black);
+}
 
-    
+input[type="range"] {
+  width: 260px;
+  height: 80px; 
+  background-color: var(--light-grey);
+  border: 3px;
+}
 
+.range-text{
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--dark);
+}
 
+input[type="text"] {
+  background-color: var(--light-grey);
+  width: 80px;
+  height: 38px;
+  border-radius: 3px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+.radio-form {
+  list-style: none;
+}
+
+input[type="radio"]{
+ width: 25px;
+ height: 25px;
+ opacity: 0.4;
+}
+
+input[type="radio"]:hover{
+  opacity: 1;
+}
+
+input[type="radio"]:disabled{
+  opacity: 0.1;
+}
+
+.text-for-form{
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.text-for-form:disabled{
+  opacity: 0.3;
+}
+
+.show-button{
+  width: 260px;
+  height: 50px; 
+  background-color: var(--light-grey);
+  border: 3px;
+  color:var(--white);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;  
+  color: var(--black); 
+  text-align: center;
+}
+
+.checkbox-form{
+  list-style:none;
+}
+
+input[type="checkbox"]{
+  width: 23px;
+  height: 23px;
+  opacity: 0.4;
+}
+
+input[type="checkbox"]:checked{
+  width: 26px;
+  height: 23px;
+  opacity: 0.4;
+}
+
+input[type="checkbox"]:hover{
+  opacity: 1;
+}
+
+input[type="checkbox"]:disabled{
+  opacity: 0.1;
+
+.sort {
+  list-style: none;
+}
+
+.text13 {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--black);
+  text-transform: uppercase; 
+  opacity: 0.3;
+}
+
+.text13:hover {
+  opacity: 0.6;
+}
+
+.text13:active,
+.text13:focus {
+  opacity: 1;
+}
+
+.triangle {
+  opacity: 0.2;
+}
+
+.triangle:hover{
+  opacity: 0.5;
+}
+
+.triangle:active,
+.triangle:focus {
+  opacity: 1;  
+}
+
+.shop {
+  list-style: none;
+}
+
+.barber {
+  width: 360px;
+  height: 231px;
+  background-color: var(--light-grey);
+}
+
+.text14 {
+  font-size: 16px;
+  line-height: 18px; 
+  color: var(--light-dark); 
+}
+
+.price-button {
+  width: 250px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--light-red);
+  border-radius: 3px;
+  color: var(--white);
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 72px;
+  padding-right: 72px;
+  }
+
+.price-button:hover{
+  background-color: var(--medium-red);  
+}
+
+.price-button:active{
+  background-color: var(--dark-red); 
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1); 
+}
+
+.page-change{
+  width: 50px;
+  height: 50px; 
+  background-color: var(--light-grey);
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--black);
+  margin-right: 11px;
+  margin-bottom: 60px;
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.page-change:hover{
+  background-color: var(--extra-light-grey);  
+}
+
+.page-change:active{
+  background-color: var(--twice-extra-light-grey);  
+}
+
+.page-change:focus{
+  background: rgba(0, 0, 0, 0.0001);
+  border: 3px solid var(--for-page-change-shop);
+  box-sizing: border-box;
+}
+
+.next-page-button {
+  width: 260px;
+  height: 50px; 
+  background-color: var(--light-grey);
+  border: 3px;
+  color:var(--white);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;  
+  color: var(--black); 
+  text-transform: uppercase;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 77px;
+  padding-right: 78px;
+  text-align: center;
+}
