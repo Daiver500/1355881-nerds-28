@@ -322,6 +322,19 @@ span.opacity:active {
   list-style:none;
 }
 
+.social-icon{
+  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+}
+
+.social-icon:hover{
+  background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+}
+
+.social-icon:active{
+  background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+}
+
+
 .text8 {
   font-weight: bold;
   font-size: 36px;
