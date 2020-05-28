@@ -182,6 +182,7 @@ padding: 0;
 
 .red-button {
   background: var(--light-red);
+  text-transform: uppercase;
 }
 
 .red-button:hover {
@@ -286,33 +287,6 @@ padding: 0;
 .partner:hover,
 .partner:focus {
   opacity:1;
-}
-
-.partner:hover,
-.partner:focus {
-  opacity:1;
-}
-
-.partner:hover,
-.partner:focus {
-  opacity:1;
-}
-
-.partner:hover,
-.partner:focus {
-  opacity:1;
-}
-
-.partner:active {
-  opacity: 0.1;
-}
-
-.partner:active {
-  opacity: 0.1;
-}
-
-.partner:active {
-  opacity: 0.1;
 }
 
 .partner:active {
