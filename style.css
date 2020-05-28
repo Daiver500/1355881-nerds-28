@@ -25,6 +25,10 @@
        url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
 }
 
+html {
+  height: 100%;  
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -60,11 +64,16 @@
 }
 
 body {
+  width: 1440px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -82,24 +91,55 @@ line-height: 30px;
 color: var(--black);
 background-color: var(--light-grey);
 text-transform: uppercase;
-margin: 0;
-padding: 0;
+display: flex;
+align-items: center;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .site-navigation {
+  display: flex;
   list-style: none;
-  margin: 0;
   padding: 0;
+  width: 440px;
+  height: 30px;
+  margin-left: 202px;
+  justify-content:space-around; 
 }
 
 .site-navigation a:hover {
   color: var(--light-red);
 }
 
+.nav-item {
+  margin-right: 44px;
+}
+
 .site-navigation a:active {
   color: var(--black);
   mix-blend-mode: normal;
   opacity: 0.3;
+}
+
+.trash-bin {
+  width: 75px;
+  height: 30px;
+  padding-left: 50px;
+  margin-right: 140px;
+  margin-left: 285px;
+}
+
+.description {
+  margin-bottom: 80px;
 }
 
 .description-list {
@@ -146,7 +186,15 @@ padding: 0;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
+.services {
+  margin-bottom: 80px;
+}
+
 .service-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  align-items: center;
   list-style: none; 
   margin: 0;
   padding: 0;
