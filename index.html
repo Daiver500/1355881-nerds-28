@@ -3,7 +3,47 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+  /* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v20-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v20-latin_cyrillic-500.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('../fonts/roboto-v20-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v20-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v20-latin_cyrillic-500.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v20-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('../fonts/roboto-v20-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v20-latin_cyrillic-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+</style>
   <link href="normalize.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <meta name="description" content="Сайт дизайн студии">
@@ -15,12 +55,12 @@
       <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии»">
       </a>
       <ul class="site-navigation">
-        <li><a href="blank.html">Студия</a></li>
-        <li><a href="blank.html">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="blank.html">Контакты</a></li>
-        <li><a href="blank.html">Корзина</a></li>
+        <li class="nav-item"><a class="nav-link" href="blank.html">Студия</a></li>
+        <li class="nav-item"><a class="nav-link" href="blank.html">Клиенты</a></li>
+        <li class="nav-item"><a class="nav-link" href="catalog.html">Магазин</a></li>
+        <li class="nav-item"><a class="nav-link" href="blank.html">Контакты</a></li>
       </ul>
+      <a class="trash-bin" href="blank.html">Корзина</a>
     </nav>
   </header>
   <main class="main-page">               
@@ -28,86 +68,86 @@
     <section class="description">
       <ul class="description-list">
         <li class="description-item"> <!--Как сделать слайдер и объединить его с шапкой?-->
-          <p class="slider-text">Долго, дорого,скрупулезно</p>
+          <p class="slider-title">Долго, дорого,скрупулезно</p>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
           <a class="slider-button" href="#">УЗНАТЬ БОЛЬШЕ</a>
           <img src="img/slide1.png" width="760" height="431" alt="картинка слайдера">
         </li>
         <li class="description-item">
-          <p class="slider-text">Любим математику как никто другой</p>
+          <p class="slider-title">Любим математику как никто другой</p>
           <p>Никакого креатива, только математические формулы для расчета идеальных пропроций</p>
           <a class="slider-button" href="#">УЗНАТЬ БОЛЬШЕ</a>
           <img src="img/slide2.png" width="760" height="431" alt="картинка слайдера">
         </li>
         <li class="description-item">
-          <p class="slider-text">Только ночь, только хардкор</p>
+          <p class="slider-title">Только ночь, только хардкор</p>
           <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
           <a class="slider-button" href="#">УЗНАТЬ БОЛЬШЕ</a>
           <img src="img/slide3.png" width="760" height="431" alt="картинка слайдера">
         </li>
       </ul>
     </section>
-    <section class="services services-section-border">
+    <section class="services">
       <h2 class="visually-hidden">Услуги</h2>
       <ul class="service-list">
         <li class="service-item">
           <img src="img/picture.png" width="300" height="146" alt="веб сайт">
-          <h3 class="text">Веб-сайты</h3>
+          <h3 class="service-title">Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a class="order-button red-button" href="#">Заказать</a>
         </li>
         <li class="service-item"> 
           <img src="img/picture2.png" width="300" height="146" alt="веб сайт">
-          <h3 class="text">Приложения</h3>
+          <h3 class="service-title">Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="order-button green-button" href="#">Заказать</a>
         <li class="service-item"> 
           <img src="img/picture3.png" width="300" height="146" alt="веб сайт">
-          <h3 class="text">Презентации</h3>
+          <h3 class="service-title">Презентации</h3>
           <p>Вы даже не подозреваете,насколько вы изумительны!</p>
           <a class="order-button yellow-button" href="#">Заказать</a>
         </li>
       </ul>
     </section>
-    <section class="about-company company-section-border">
+    <section class="about-company">
       <h2 class="visually-hidden">О компании</h2>
-      <p class="text2">Мы-маленькая, но гордая дизайн-студия из Краснодара.</p>
+      <p class="about-description">Мы-маленькая, но гордая дизайн-студия из Краснодара.</p>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
-      <p class="text3">Выполняем заказы на разработку:</p>
+      <p class="about-list-header">Выполняем заказы на разработку:</p>
       <ul>
-        <li>Веб-сайтов любой сложности</li>
-        <li>Мобильных приложений для iOS и Android</li>
-        <li>Слайдшоу и видео для корпоративных презентаций</li>
+        <li class="about-item">Веб-сайтов любой сложности</li>
+        <li class="about-item">Мобильных приложений для iOS и Android</li>
+        <li class="about-item">Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
       <img src="img/picture4.png" width="360" height="208" alt="логотип">
       <table>
-        <caption class="text4">С 2004 года любим точность во всем:</caption>
+        <caption class="table-header">С 2004 года любим точность во всем:</caption>
         <tr>
-          <td class="text5">146<sup class="percent">%</sup></td>
-          <td class="text5">150<sup class="percent">%</sup></td>
-          <td class="text5">50<sup class="percent">%</sup></td>
+          <td class="table-item-description">146<sup class="percent">%</sup></td>
+          <td class="table-item-description">150<sup class="percent">%</sup></td>
+          <td class="table-item-description">50<sup class="percent">%</sup></td>
         </tr>
         <tr>
-          <th class="text6">Уровень самоотдачи</th>
-          <th class="text6">Соблюдение сроков</th>
-          <th class="text6">Минимальная предоплата</th>
+          <th class="table-item">Уровень самоотдачи</th>
+          <th class="table-item">Соблюдение сроков</th>
+          <th class="table-item">Минимальная предоплата</th>
         </tr>
       </table>
     </section>
-    <section class="main-partners partners-section-border">
+    <section class="main-partners">
       <h2 class="visually-hidden">Партнёры</h2>
-      <ul class="partners">
-        <li class="group-partners">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="partner1" src="img/picture5.svg" width="199" height="68" alt="логотип htmlacademy"></a>
+      <ul class="partners-list">
+        <li class="partners-item">
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="partner-item-first" src="img/picture5.svg" width="199" height="68" alt="логотип htmlacademy"></a>
         </li>
-        <li class="group-partners"> 
-          <a href="blank.html"><img class="partner2" src="img/picture6.svg" width="209" height="90" alt="логотип барбершопа"></a>
+        <li class="partners-item"> 
+          <a href="blank.html"><img class="partner-item-second" src="img/picture6.svg" width="209" height="90" alt="логотип барбершопа"></a>
         </li>
-        <li class="group-partners">
-          <a href="blank.html"><img class="partner3" src="img/picture7.svg" width="185" height="52" alt="логотип Pink"></a>
+        <li class="partners-item">
+          <a href="blank.html"><img class="partner-item-third" src="img/picture7.svg" width="185" height="52" alt="логотип Pink"></a>
         </li>
-        <li class="group-partners">
-          <a href="blank.html"><img class="partner4" src="img/picture8.svg" width="173" height="84" alt="логотип Mishka"></a>
+        <li class="partners-item">
+          <a href="blank.html"><img class="partner-item-forth" src="img/picture8.svg" width="173" height="84" alt="логотип Mishka"></a>
         </li>
       </ul>
     </section>
@@ -124,8 +164,8 @@
     </section>
   </main>
   <footer>
-    <div>
-      <ul class="social">
+    <div class="social">
+      <ul class="social-list">
         <li>
           <a class="social-icon vk" href="https://vk.com/"><img src="img/vk-icon.svg" width="26" height="15" alt="логотип вконтакте"></a>
         </li>
@@ -137,8 +177,8 @@
         </li>
       </ul>
     </div>
-      <p class="text8">Давайте дружить, это выгодно!</p>
-      <p class="text9">Скидка 10% для друзей из социальных сетей.</p>
+      <p class="friendship">Давайте дружить, это выгодно!</p>
+      <p class="offer">Скидка 10% для друзей из социальных сетей.</p>
   </footer>
   <section><!-- Здесь будет всплывающая форма --> 
     <form url="https://echo.htmlacademy.ru/" method="post">

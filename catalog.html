@@ -3,23 +3,63 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин готовых шаблонов</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* roboto-regular - latin_cyrillic */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v20-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v20-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+  /* roboto-500 - latin_cyrillic */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v20-latin_cyrillic-500.eot'); /* IE9 Compat Modes */
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+         url('../fonts/roboto-v20-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v20-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v20-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v20-latin_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v20-latin_cyrillic-500.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+  /* roboto-700 - latin_cyrillic */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v20-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+         url('../fonts/roboto-v20-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v20-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v20-latin_cyrillic-700.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+  </style>
   <link href="normalize.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
 <body class="page-body">
   <header>
     <nav class="main-navigation">
-      <a href="index.html">
+      <a class="main-header-logo" href="index.html">
       <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии»">
       </a>
       <ul class="site-navigation">
-        <li><a href="blank.html">Студия</a></li>
-        <li><a href="blank.html">Клиенты</a></li>
-        <li><a class="shop-border">Магазин</a></li>
-        <li><a href="blank.html">Контакты</a></li>
-        <li><a href="blank.html">Корзина</a></li>
+        <li class="nav-item"><a class="nav-link" href="blank.html">Студия</a></li>
+        <li class="nav-item"><a class="nav-link" href="blank.html">Клиенты</a></li>
+        <li class="nav-item"><a class="nav-link shop-border">Магазин</a></li>
+        <li class="nav-item"><a class="nav-link" href="blank.html">Контакты</a></li>
       </ul>
+      <a class="trash-bin" href="blank.html">Корзина</a>
     </nav>
   </header>
   <main>
@@ -30,8 +70,8 @@
         <fieldset>
           <legend><span class="text-form">Стоимость</span></legend>
           <input type="range" min="1" max="15000" step="1">
-          <label class="range-text">от<input type="text" value="0"></label>
-          <label class="range-text">до<input type="text" value="15000"></label>
+          <label class="range-text">от<input type="number" value="0"></label><!--не работает фон-->
+          <label class="range-text">до<input type="number" value="15000"></label><!--не работает фон-->
         </fieldset>
         <fieldset>
           <legend><span class="text-form">Сетка</span></legend>
@@ -75,7 +115,7 @@
              </li>
           </ul>
         </fieldset>
-        <button class="show-button" type="button">ПОКАЗАТЬ</button><!--кнопка не активна?-->
+        <button class="button" type="button">ПОКАЗАТЬ</button><!--кнопка не активна?-->
       </form>
     </section>
     <section>
@@ -83,87 +123,89 @@
       <p class="text-form">Сортировать</p>
       <ul class="sort"> 
         <li>
-          <a href="#"><span class="text13">по цене</span></a>
+          <a class="sort-link" href="#">по цене</a>
         </li>
         <li>
-          <a href="#"><span class="text13">по типу</span></a>
+          <a class="sort-link" href="#">по типу</a>
         </li>
         <li>
-          <a href="#"><span class="text13">по названию</span></a>
+          <a class="sort-link" href="#">по названию</a>
         </li>
       </ul>
-      <a class="triangle" href="#"><img src="img/icon-up.svg"></a>
-      <a class="triangle" href="#"><img src="img/icon-down.svg"></a>
+      <a class="triangle" href="#">Вверх</a>
+      <a class="triangle" href="#">Вниз</a>
+      <img src="img/icon-up.svg">
+      <img src="img/icon-down.svg">
     </section>
     <section>
       <h2 class="visually-hidden">Выбор товара</h2>
-      <ul class="shop">
+      <ul class="catalog-list">
         <li>
           <img src="img/sedona.jpg" width="360" height="576" alt="Информационный сайт для туристов">
-          <div class="barber">
+          <div class="product-info">
             <a href="#">
-            <h3 class="text12">SEDONA</h3>
+            <h3 class="product-name">SEDONA</h3>
             </a>
-            <p><span class="text14">Информационнный сайт для туристов</span></p>
+            <p><span class="product-description">Информационнный сайт для туристов</span></p>
             <a class="price-button" href="#">9900</a>
           </div>
         </li>
         <li>
           <img src="img/pink.jpg" width="358" height="578" alt="Продуктовый лендинг">
-          <div class="barber">
+          <div class="product-info">
             <a href="#">
-            <h3 class="text12">PINK APP</h3>
+            <h3 class="product-name">PINK APP</h3>
             </a>
-            <p><span class="text14">Продуктовый лендинг приложения для iOS и Android</span></p>
+            <p><span class="product-description">Продуктовый лендинг приложения для iOS и Android</span></p>
             <a class="price-button" href="#">9900</a>
           </div>
         </li>
         <li>
           <img src="img/barber.jpg" width="358" height="578" alt="Барбершоп">
-          <div class="barber">
+          <div class="product-info">
             <a href="#">
-            <h3 class="text12">BARBERSHOP</h3>
+            <h3 class="product-name">BARBERSHOP</h3>
             </a>
-            <p><span class="text14">Сайт салона красоты. Для мужчин, да.</span></p>
+            <p><span class="product-description">Сайт салона красоты. Для мужчин, да.</span></p>
             <a class="price-button" href="#">9900</a>
           </div>
         </li>
         <li>
           <img src="img/mishka.jpg" width="358" height="578" alt="Интернет-магазин игрушек">
-          <div class="barber">
+          <div class="product-info">
             <a href="#">
-            <h3 class="text12">MISHKA</h3>
+            <h3 class="product-name">MISHKA</h3>
             </a>
-            <p><span class="text14">Интернет магазин вязаных игрушек</span></p>
+            <p><span class="product-description">Интернет магазин вязаных игрушек</span></p>
             <a class="price-button" href="#">9900</a>
           </div>
         </li>
         <li>
           <img src="img/learn.jpg" width="358" height="578" alt="Повышение квалификации">
-          <div class="barber">
+          <div class="product-info">
             <a href="#">
-            <h3 class="text12">A PLUS</h3>
+            <h3 class="product-name">A PLUS</h3>
             </a>
-            <p><span class="text14">Лендинг курсов повышения квалифиакции</span></p>
+            <p><span class="product-description">Лендинг курсов повышения квалифиакции</span></p>
             <a class="price-button" href="#">9900</a> 
           </div>
         </li>
         <li>
           <img src="img/kvast.jpg" width="358" height="578" alt="Производитель кваса">
-          <div class="barber">
+          <div class="product-info">
             <a href="#">
-            <h3 class="text12">КВАСТ</h3>
+            <h3 class="product-name">КВАСТ</h3>
             </a>
-            <p><span class="text14">Промо-сайт производителя крафтового кваса</span></p>
+            <p><span class="product-description">Промо-сайт производителя крафтового кваса</span></p>
             <a class="price-button" href="#">9900</a>
           </div>
         </li>
       </ul>
-      <div class="page-navigation">
-        <a class="page-change" href="#">1</a>
-        <a class="page-change" href="#">2</a>
-        <a class="page-change" href="#">3</a>
-        <button type="button" class="next-page-button">Следующая</button><!--кнопка не активна?-->
+      <div class="pagination">
+        <a class="pagination-item" href="#">1</a>
+        <a class="pagination-item" href="#">2</a>
+        <a class="pagination-item" href="#">3</a>
+        <button type="button" class="button button-filter">Следующая</button><!--кнопка не активна?-->
       </div>
       </section>
     <section class="contacts">
@@ -172,15 +214,15 @@
       <img src="img/map-marker.png" width="231" height="190" alt="логотип"> 
       <div class="contact-us">
         <h4 class="contacts-header">NERDS DESIGN STUDIO</h4>
-        <p class="text7">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a class="text7" href="tel:78122757575">тел.+7(812) 275-75-75</a>
+        <p class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <a class="address" href="tel:78122757575">тел.+7(812) 275-75-75</a>
         <a class="write-button" href="#">Напишите нам</a>
       </div>
     </section>
   </main>
   <footer>
-    <div>
-      <ul class="social">
+    <div class="social">
+      <ul class="social-list">
         <li>
           <a class="social-icon vk" href="https://vk.com/"><img src="img/vk-icon.svg" width="26" height="15" alt="логотип вконтакте"></a>
         </li>
@@ -192,16 +234,16 @@
         </li>
       </ul>
     </div>
-      <p class="text8">Давайте дружить, это выгодно!</p>
-      <p class="text9">Скидка 10% для друзей из социальных сетей.</p>
+      <p class="friendship">Давайте дружить, это выгодно!</p>
+      <p class="offer">Скидка 10% для друзей из социальных сетей.</p>
   </footer>
   </footer>
-  <section><!-- Здесь будет всплывающая форма --> 
+  <section>
     <form url="https://echo.htmlacademy.ru/" method="post">
-      <h1 class="text10">Напишите нам</h1>
-      <label for="name"><span class="text11">Ваше имя:</span></label>
-      <label for="email:"><span class="text11">Ваш email:</span></label>
-      <label for="comment"><span class="text11">Текст письма:</span></label>
+      <h1 class="form-write-us">Напишите нам</h1>
+      <label class="contacts" for="name">Ваше имя:</label>
+      <label class="contacts" for="email:">Ваш email:</label>
+      <label class="contacts" for="comment">Текст письма:</label>
       <input type="text" name="name" id="name" placeholder="Имя Фамилия">
       <input type="text" name="email" id="email" placeholder="email@example.com">
       <textarea name="text" rows="10" cols="50" id="comment" placeholder="В свободной форме"></textarea>
