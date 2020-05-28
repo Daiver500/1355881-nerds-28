@@ -116,26 +116,31 @@ padding: 0;
   margin: 0;
 }
 
-.slider-button {
-  width: 240px;
-  height: 50px;
+.button {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  text-transform: uppercase;
   color: var(--white);
-  background: var(--light-red);
   border-radius: 3px;
   text-align: center;
+}
+
+.slider-button {
+  width: 240px;
+  height: 50px;
+  background: var(--light-red);
   padding-top: 17px;
   padding-bottom: 15px;
   padding-left: 52px;
   padding-right: 56px;
+  text-transform: none;
 }
 
 .slider-button:hover  {
   background-color: var(--medium-red);
 }
-
+  
 .slider-button:active  {
   background-color: var(--dark-red);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
@@ -147,42 +152,14 @@ padding: 0;
   padding: 0;
 }
 
-/**стили для  разграничительной полосы**/
-|/**.services-section-border {
-  border-bottom-color: var(--light-grey);
-  border-bottom-style: solid;
-  border-bottom-width: 2;
-  margin-left: 140px;
-  margin-right: 142px;**/ 
-}
-
-.service-title {
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: bold;   
-  color: var(--black);
-}
-
-.order-button {
+.red-button {
+  background: var(--light-red);
   width: 160px;
   height: 50px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;  
-  color: var(--white);  
-  border-radius: 3px;
-  text-transform: uppercase;
-  text-align: center;
   padding-top: 17px;
   padding-bottom: 15px;
   padding-left: 39px;
   padding-right: 40px;
-}
-
-.red-button {
-  background: var(--light-red);
-  text-transform: uppercase;
 }
 
 .red-button:hover {
@@ -196,6 +173,12 @@ padding: 0;
 
 .green-button {
   background: var(--light-green);
+  width: 160px;
+  height: 50px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 39px;
+  padding-right: 40px;
 }
 
 .green-button:hover {
@@ -208,7 +191,13 @@ padding: 0;
 }
 
 .yellow-button {
-  background: var(--light-yellow);  
+  background: var(--light-yellow);
+  width: 160px;
+  height: 50px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 39px;
+  padding-right: 40px;  
 }
 
 .yellow-button:hover {
@@ -219,6 +208,16 @@ padding: 0;
   background: var(--dark-yellow); 
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1); 
 }
+
+.service-title {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;   
+  color: var(--black);
+}
+
+
 /**стили для  разграничительной полосы**/
 /**.company-section-border {
   border-bottom-color: var(--light-grey);
@@ -311,17 +310,10 @@ padding: 0;
   color: var(--light-dark);
 }
 
-.write-button {
+.write-us-button {
   width: 219px;
   height: 50px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
   background-color: var(--light-red);
-  border-radius: 3px;
-  color: var(--white);
-  text-align: center;
   padding-top: 17px;
   padding-bottom: 15px;
   padding-left: 44px;
@@ -332,11 +324,11 @@ padding: 0;
   margin-bottom: 40px;
 }
 
-.write-button:hover  {
+.write-us-button:hover  {
   background-color: var(--medium-red);
 }
 
-.write-button:active  {
+.write-us-button:active  {
   background-color: var(--dark-red);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1); 
 }
@@ -410,25 +402,10 @@ padding: 0;
   color: var(--black);
 }
 
-input::-webkit-input-placeholder{
-  color: var(--medium-dark);
-}
- 
-textarea::-webkit-input-placeholder{
-  color: var(--medium-dark);
-}
-
 .popup-button {
   width: 259px;
   height: 50px; 
   background-color: var(--light-red);
-  border: 3px;
-  color:var(--white);
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;  
-  color: var(--white); 
-  text-transform: uppercase;
 }
 
 .popup-button:hover  {
@@ -451,6 +428,14 @@ textarea::-webkit-input-placeholder{
 .close-button:active {
   color: var(--light-red);
   opacity: 0.1;
+}
+
+input::-webkit-input-placeholder{
+  color: var(--medium-dark);
+}
+ 
+textarea::-webkit-input-placeholder{
+  color: var(--medium-dark);
 }
 
 .shop-border {
@@ -530,21 +515,11 @@ input[type="radio"]:disabled{
   opacity: 0.3;
 }
 
-.button{
+.catalog-button {
   width: 260px;
   height: 50px; 
   background-color: var(--light-grey);
-  border: 3px;
-  color:var(--white);
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;  
   color: var(--black); 
-  text-align: center;
-}
-
-.button-filter {
-  text-transform: uppercase;
   padding-top: 17px;
   padding-bottom: 15px;
   padding-left: 77px;
