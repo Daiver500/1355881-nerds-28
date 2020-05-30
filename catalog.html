@@ -15,10 +15,10 @@
       <ul class="site-navigation">
         <li class="nav-item"><a class="nav-link" href="blank.html">Студия</a></li>
         <li class="nav-item"><a class="nav-link" href="blank.html">Клиенты</a></li>
-        <li class="nav-item"><a class="nav-link shop-border">Магазин</a></li>
+        <li class="nav-item"><a class="nav-link">Магазин</a></li>
         <li class="nav-item"><a class="nav-link" href="blank.html">Контакты</a></li>
       </ul>
-      <a class="trash-bin" href="blank.html">Корзина</a>
+      <a class="nav-link" href="blank.html">Корзина</a>
     </nav>
   </header>
   <main>
@@ -29,8 +29,8 @@
         <fieldset>
           <legend><span class="text-form">Стоимость</span></legend>
           <input type="range" min="1" max="15000" step="1">
-          <label class="range-text">от<input type="number" value="0"></label><!--не работает фон-->
-          <label class="range-text">до<input type="number" value="15000"></label><!--не работает фон-->
+          <label class="range-text">от<input type="number" value="0"></label>
+          <label class="range-text">до<input type="number" value="15000"></label>
         </fieldset>
         <fieldset>
           <legend><span class="text-form">Сетка</span></legend>
@@ -74,7 +74,7 @@
              </li>
           </ul>
         </fieldset>
-        <button class="button catalog-button" type="button">ПОКАЗАТЬ</button><!--кнопка не активна?-->
+        <button class="button form-button catalog-button" type="button">ПОКАЗАТЬ</button>
       </form>
     </section>
     <section>
@@ -102,7 +102,7 @@
         <li>
           <img src="img/sedona.jpg" width="360" height="576" alt="Информационный сайт для туристов">
           <div class="product-info">
-            <a href="#">
+            <a class="product-item-info" href="#">
             <h3 class="product-name">SEDONA</h3>
             </a>
             <p><span class="product-description">Информационнный сайт для туристов</span></p>
@@ -112,7 +112,7 @@
         <li>
           <img src="img/pink.jpg" width="358" height="578" alt="Продуктовый лендинг">
           <div class="product-info">
-            <a href="#">
+            <a class="product-item-info" href="#">
             <h3 class="product-name">PINK APP</h3>
             </a>
             <p><span class="product-description">Продуктовый лендинг приложения для iOS и Android</span></p>
@@ -122,7 +122,7 @@
         <li>
           <img src="img/barber.jpg" width="358" height="578" alt="Барбершоп">
           <div class="product-info">
-            <a href="#">
+            <a class="product-item-info" href="#">
             <h3 class="product-name">BARBERSHOP</h3>
             </a>
             <p><span class="product-description">Сайт салона красоты. Для мужчин, да.</span></p>
@@ -132,7 +132,7 @@
         <li>
           <img src="img/mishka.jpg" width="358" height="578" alt="Интернет-магазин игрушек">
           <div class="product-info">
-            <a href="#">
+            <a class="product-item-info" href="#">
             <h3 class="product-name">MISHKA</h3>
             </a>
             <p><span class="product-description">Интернет магазин вязаных игрушек</span></p>
@@ -142,7 +142,7 @@
         <li>
           <img src="img/learn.jpg" width="358" height="578" alt="Повышение квалификации">
           <div class="product-info">
-            <a href="#">
+            <a class="product-item-info" href="#">
             <h3 class="product-name">A PLUS</h3>
             </a>
             <p><span class="product-description">Лендинг курсов повышения квалифиакции</span></p>
@@ -152,7 +152,7 @@
         <li>
           <img src="img/kvast.jpg" width="358" height="578" alt="Производитель кваса">
           <div class="product-info">
-            <a href="#">
+            <a class="product-item-info" href="#">
             <h3 class="product-name">КВАСТ</h3>
             </a>
             <p><span class="product-description">Промо-сайт производителя крафтового кваса</span></p>
@@ -164,20 +164,20 @@
         <a class="button pagination-item" href="#">1</a>
         <a class="button pagination-item" href="#">2</a>
         <a class="button pagination-item" href="#">3</a>
-        <button type="button" class="button catalog-button">Следующая</button><!--кнопка не активна?-->
+        <button type="button" class="button catalog-button">Следующая</button>
       </div>
       </section>
-    <section class="contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <img src="img/map.jpg" width="1440" height="416" alt="карта">
-      <img src="img/map-marker.png" width="231" height="190" alt="логотип"> 
-      <div class="contact-us">
-        <h4 class="contacts-header">NERDS DESIGN STUDIO</h4>
-        <p class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a class="address" href="tel:78122757575">тел.+7(812) 275-75-75</a>
-        <a class="write-button" href="#">Напишите нам</a>
-      </div>
-    </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <img src="img/map.jpg" width="1440" height="416" alt="карта">
+        <img src="img/map-marker.png" width="231" height="190" alt="логотип"> 
+        <div class="contact-us">
+          <h4 class="contacts-header">NERDS DESIGN STUDIO</h4>
+          <p class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a class="address" href="tel:78122757575">тел.+7(812) 275-75-75</a>
+          <a class="button write-us-button" href="#">Напишите нам</a>
+        </div>
+      </section>
   </main>
   <footer>
     <div class="social">
@@ -197,16 +197,16 @@
       <p class="offer">Скидка 10% для друзей из социальных сетей.</p>
   </footer>
   </footer>
-  <section>
+  <section><!-- Здесь будет всплывающая форма --> 
     <form url="https://echo.htmlacademy.ru/" method="post">
-      <h1 class="form-write-us">Напишите нам</h1>
-      <label class="contacts" for="name">Ваше имя:</label>
-      <label class="contacts" for="email:">Ваш email:</label>
-      <label class="contacts" for="comment">Текст письма:</label>
+      <h1 class="popup-header">Напишите нам</h1>
+      <label class="popup-item" for="name">Ваше имя:</label>
+      <label class="popup-item" for="email:">Ваш email:</label>
+      <label class="popup-item" for="comment">Текст письма:</label>
       <input type="text" name="name" id="name" placeholder="Имя Фамилия">
       <input type="text" name="email" id="email" placeholder="email@example.com">
       <textarea name="text" rows="10" cols="50" id="comment" placeholder="В свободной форме"></textarea>
-      <button class="popup-button" type="submit">Отправить</button>
+      <button class="button popup-button" type="submit">Отправить</button> 
     </form>
     <button class="close-button" type="button"><img src="img/close-cross.svg" width="21" height="21" alt="закрыть форму отправки"></button><!-- Здесь будет кнопка закрыть форму --> 
   </section>
