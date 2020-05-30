@@ -85,7 +85,7 @@ img {
   height: auto;
 }
 
-.main-navigation {
+.main-header .main-navigation {
 font-size: 16px;
 line-height: 30px;
 color: var(--black);
@@ -98,12 +98,6 @@ align-items: center;
 .main-header-logo {
   width: 160px;
   height: 65px;
-}
-
-.container {
-  width: 1440px;
-  margin: 0 auto;
-  padding: 0;
 }
 
 .site-navigation {
