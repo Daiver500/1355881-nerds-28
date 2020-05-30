@@ -25,10 +25,6 @@
        url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
 }
 
-html {
-  height: 100%;  
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -64,16 +60,12 @@ html {
 }
 
 body {
-  width: 1440px;
+  width: 1220px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
 }
 
 a {
@@ -85,14 +77,12 @@ img {
   height: auto;
 }
 
-.main-header .main-navigation {
+.main-navigation {
 font-size: 16px;
 line-height: 30px;
 color: var(--black);
 background-color: var(--light-grey);
 text-transform: uppercase;
-display: flex;
-align-items: center;
 }
 
 .main-header-logo {
@@ -101,39 +91,20 @@ align-items: center;
 }
 
 .site-navigation {
-  display: flex;
   list-style: none;
   padding: 0;
-  width: 440px;
-  height: 30px;
-  margin-left: 202px;
-  justify-content:space-around; 
+  margin: 0;
 }
 
-.site-navigation a:hover {
+.site-navigation a:hover,
+.site-navigation a:focus, {
   color: var(--light-red);
-}
-
-.nav-item {
-  margin-right: 44px;
 }
 
 .site-navigation a:active {
   color: var(--black);
   mix-blend-mode: normal;
   opacity: 0.3;
-}
-
-.trash-bin {
-  width: 75px;
-  height: 30px;
-  padding-left: 50px;
-  margin-right: 140px;
-  margin-left: 285px;
-}
-
-.description {
-  margin-bottom: 80px;
 }
 
 .description-list {
@@ -147,7 +118,6 @@ align-items: center;
   font-size: 55px;
   line-height: 55px;
   color: var(--black);
-  margin: 0;
 }
 
 .button {
@@ -158,14 +128,16 @@ align-items: center;
   color: var(--white);
   border-radius: 3px;
   text-align: center;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 39px;
+  padding-right: 40px;
 }
 
 .slider-button {
   width: 240px;
   height: 50px;
   background: var(--light-red);
-  padding-top: 17px;
-  padding-bottom: 15px;
   padding-left: 52px;
   padding-right: 56px;
   text-transform: none;
@@ -198,10 +170,6 @@ align-items: center;
   background: var(--light-red);
   width: 160px;
   height: 50px;
-  padding-top: 17px;
-  padding-bottom: 15px;
-  padding-left: 39px;
-  padding-right: 40px;
 }
 
 .red-button:hover {
@@ -217,10 +185,6 @@ align-items: center;
   background: var(--light-green);
   width: 160px;
   height: 50px;
-  padding-top: 17px;
-  padding-bottom: 15px;
-  padding-left: 39px;
-  padding-right: 40px;
 }
 
 .green-button:hover {
@@ -236,10 +200,6 @@ align-items: center;
   background: var(--light-yellow);
   width: 160px;
   height: 50px;
-  padding-top: 17px;
-  padding-bottom: 15px;
-  padding-left: 39px;
-  padding-right: 40px;  
 }
 
 .yellow-button:hover {
@@ -345,14 +305,8 @@ align-items: center;
   width: 219px;
   height: 50px;
   background-color: var(--light-red);
-  padding-top: 17px;
-  padding-bottom: 15px;
   padding-left: 44px;
   padding-right: 44px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 211px;
-  margin-bottom: 40px;
 }
 
 .write-us-button:hover  {
@@ -469,25 +423,12 @@ textarea::-webkit-input-placeholder{
   color: var(--medium-dark);
 }
 
-.shop-border {
-  border-bottom: 2px solid var(--light-red);
-}
-
-.text-form{
+.text-form .product-name{
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   color: var(--black);
   text-transform: uppercase;
-}
-
-.product-name {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 30px;
-  color: var(--black);
-  text-transform: uppercase;
-  text-align: center;
 }
 
 .product-name:hover{
@@ -551,8 +492,6 @@ input[type="radio"]:disabled{
   height: 50px; 
   background-color: var(--light-grey);
   color: var(--black); 
-  padding-top: 17px;
-  padding-bottom: 15px;
   padding-left: 77px;
   padding-right: 78px;
   }
@@ -643,16 +582,7 @@ input[type="checkbox"]:disabled{
 .price-button {
   width: 250px;
   height: 50px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
   background-color: var(--light-red);
-  border-radius: 3px;
-  color: var(--white);
-  text-align: center;
-  padding-top: 17px;
-  padding-bottom: 15px;
   padding-left: 72px;
   padding-right: 72px;
   }
@@ -666,20 +596,11 @@ input[type="checkbox"]:disabled{
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1); 
 }
 
-.pagination-item{
+.pagination-item {
   width: 50px;
   height: 50px; 
   background-color: var(--light-grey);
-  border-radius: 3px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
   color: var(--black);
-  margin-right: 11px;
-  margin-bottom: 60px;
-  text-align: center;
-  padding-top: 17px;
-  padding-bottom: 15px;
   padding-left: 20px;
   padding-right: 20px;
 }
