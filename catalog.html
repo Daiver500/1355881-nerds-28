@@ -23,17 +23,17 @@
   </header>
   <main>
     <h1 class="main-title">Магазин готовых шаблонов</h1><!--Как запилить фон как в проекте?-->
-    <section>
+    <section class="container">
       <h2 class="visually-hidden">Фильтр</h2>
       <form url="https://echo.htmlacademy.ru/" method="get">
         <fieldset>
-          <legend><span class="text-form">Стоимость</span></legend>
-          <input type="range" min="1" max="15000" step="1">
+          <legend class="text-form">Стоимость</legend>
+          <input class="range" type="range" min="1" max="15000" step="1">
           <label class="range-text">от<input type="number" value="0"></label>
           <label class="range-text">до<input type="number" value="15000"></label>
         </fieldset>
         <fieldset>
-          <legend><span class="text-form">Сетка</span></legend>
+          <legend class="text-form">Сетка</legend>
           <ul class="radio-form">
             <li>
               <input type="radio" name="net" value="Adaptive" checked id="adaptive">
@@ -50,7 +50,7 @@
           </ul>
          </fieldset>
          <fieldset>
-           <legend><span class="text-form">Особенности</span></legend>
+           <legend class="text-form">Особенности</legend>
            <ul class="checkbox-form">
              <li>
                <input type="checkbox" name="Slider" checked id="slider">
@@ -74,10 +74,10 @@
              </li>
           </ul>
         </fieldset>
-        <button class="button form-button catalog-button" type="button">ПОКАЗАТЬ</button>
+        <button class="button catalog-button" type="button">ПОКАЗАТЬ</button>
       </form>
     </section>
-    <section>
+    <section class="container">
       <h2 class="visually-hidden">Сортировка</h2>
       <p class="text-form">Сортировать</p>
       <ul class="sort"> 
@@ -96,7 +96,7 @@
       <img src="img/icon-up.svg">
       <img src="img/icon-down.svg">
     </section>
-    <section>
+    <section class="container">
       <h2 class="visually-hidden">Выбор товара</h2>
       <ul class="catalog-list">
         <li>
@@ -197,7 +197,7 @@
       <p class="offer">Скидка 10% для друзей из социальных сетей.</p>
   </footer>
   </footer>
-  <section><!-- Здесь будет всплывающая форма --> 
+  <section class="container"><!-- Здесь будет всплывающая форма --> 
     <form url="https://echo.htmlacademy.ru/" method="post">
       <h1 class="popup-header">Напишите нам</h1>
       <label class="popup-item" for="name">Ваше имя:</label>
