@@ -78,10 +78,6 @@ img {
   height: auto;
 }
 
-.main-header {
-  margin: 0;
-}
-
 .main-navigation {
 font-size: 16px;
 line-height: 30px;
@@ -89,7 +85,6 @@ font-weight: 500;
 text-transform: uppercase;
 color: var(--black);
 background-color: var(--light-grey);
-margin: 0;
 }
 
 .main-header-logo {
@@ -143,6 +138,8 @@ margin: 0;
   line-height: 55px;
   color: var(--black);
   font-weight: 500;
+  margin:0;
+  background-color: var(--light-grey)
 }
 
 .button {
@@ -263,12 +260,21 @@ margin: 0;
   font-size: 26px;
   line-height: 40px;
   color: var(--black);
+  font-size: 50%;
 }
 
 .table-item {
   font-size: 16px;
   line-height: 18px;  
 }
+
+/**стили для  разграничительной полосы**/
+/**.company-section-border {
+  border-bottom-color: var(--light-grey);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  margin-left: 140px;
+  margin-right: 142px;**/
 
 .partners-list {
   list-style: none;
@@ -288,6 +294,14 @@ margin: 0;
 .partner:active {
   opacity: 0.1;
 }
+
+/**стили для  разграничительной полосы**/
+/**.company-section-border {
+  border-bottom-color: var(--light-grey);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  margin-left: 140px;
+  margin-right: 142px;**/
 
 .contact-us {
   min-width: 319px;
@@ -431,6 +445,7 @@ textarea:focus {
 
 input[type="range"] {
   min-width: 260px;
+  height: 80px;
   background-color: var(--light-grey);
   border-radius: 3px;
 }
