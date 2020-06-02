@@ -19,14 +19,16 @@
         <li class="nav-item"><a class="nav-link" href="catalog.html">Магазин</a></li>
         <li class="nav-item"><a class="nav-link" href="blank.html">Контакты</a></li>
       </ul>
-      <a class="nav-link" href="blank.html">Корзина</a>
+      <div class="user-navigation">
+      <a class="nav-link bin" href="blank.html">Корзина</a>
+      </div>
     </nav>
   </header>
   <main class="main-page">               
     <h1 class="visually-hidden">Интернет магазин Nerds</h1>
     <section class="description">
       <ul class="description-list">
-        <li class="description-item"> <!--Как сделать слайдер и объединить его с шапкой?-->
+        <li class="description-item"> 
           <p class="slider-title">Долго, дорого,скрупулезно</p>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
           <a class="button slider-button" href="#">УЗНАТЬ БОЛЬШЕ</a>
@@ -52,32 +54,35 @@
         <li class="service-item">
           <img src="img/picture.png" width="300" height="146" alt="веб сайт">
           <h3 class="service-title">Веб-сайты</h3>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="button" href="#">Заказать</a>
+          <p class="service-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="button red-button" href="#">Заказать</a>
         </li>
         <li class="service-item"> 
           <img src="img/picture2.png" width="300" height="146" alt="веб сайт">
           <h3 class="service-title">Приложения</h3>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <p class="service-description">Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="button green-button" href="#">Заказать</a>
         <li class="service-item"> 
           <img src="img/picture3.png" width="300" height="146" alt="веб сайт">
           <h3 class="service-title">Презентации</h3>
-          <p>Вы даже не подозреваете,насколько вы изумительны!</p>
+          <p class="service-description">Вы даже не подозреваете,насколько вы изумительны!</p>
           <a class="button yellow-button" href="#">Заказать</a>
         </li>
       </ul>
     </section>
     <section class="about-company">
       <h2 class="visually-hidden">О компании</h2>
+      <div class="about">
       <p class="about-description">Мы-маленькая, но гордая дизайн-студия из Краснодара.</p>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
       <p class="about-list-header">Выполняем заказы на разработку:</p>
-      <ul>
+      <ul class="about-list">
         <li class="about-item">Веб-сайтов любой сложности</li>
         <li class="about-item">Мобильных приложений для iOS и Android</li>
         <li class="about-item">Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
+      </div>
+      <div class="table">
       <img src="img/picture4.png" width="360" height="208" alt="логотип">
       <table>
         <caption class="table-header">С 2004 года любим точность во всем:</caption>
@@ -92,6 +97,7 @@
           <th class="table-item">Минимальная предоплата</th>
         </tr>
       </table>
+      </div>
     </section>
     <section class="main-partners">
       <h2 class="visually-hidden">Партнёры</h2>
@@ -110,19 +116,19 @@
         </li>
       </ul>
     </section>
-    <section class="contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <img src="img/map.jpg" width="1440" height="416" alt="карта">
-      <img src="img/map-marker.png" width="231" height="190" alt="логотип"> 
+    <h2 class="visually-hidden">Контакты</h2>
+    <div class="map"> 
+      <div class="marker">
       <div class="contact-us">
         <h4 class="contacts-header">NERDS DESIGN STUDIO</h4>
         <p class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <a class="address" href="tel:78122757575">тел.+7(812) 275-75-75</a>
         <a class="button write-us-button" href="#">Напишите нам</a>
-      </div>
-    </section>
+    </div>
+    </div>
+  </div>
   </main>
-  <footer>
+  <footer class="main-footer">
     <div class="social">
       <ul class="social-list">
         <li>
@@ -136,21 +142,29 @@
         </li>
       </ul>
     </div>
+    <div>
       <p class="friendship">Давайте дружить, это выгодно!</p>
       <p class="offer">Скидка 10% для друзей из социальных сетей.</p>
-  </footer>
-  <section class="container"><!-- Здесь будет всплывающая форма --> 
-    <form url="https://echo.htmlacademy.ru/" method="post">
-      <h1 class="popup-header">Напишите нам</h1>
+    </div>
+    </footer>
+  <!-- Здесь будет всплывающая форма --> 
+  <form class="popup-form" url="https://echo.htmlacademy.ru/" method="post">
+    <h1 class="popup-header">Напишите нам</h1>
+    <div class="popup-line">
       <label class="popup-item" for="name">Ваше имя:</label>
+      <p><input type="text" name="name" placeholder="Имя Фамилия"></p>
+    </div>
+    <div class="popup-line">
       <label class="popup-item" for="email:">Ваш email:</label>
+     <p><input type="text" name="email" id="email" placeholder="email@example.com"></p>
+    </div>
+    <div>
       <label class="popup-item" for="comment">Текст письма:</label>
-      <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-      <input type="text" name="email" id="email" placeholder="email@example.com">
-      <textarea name="text" rows="10" cols="50" id="comment" placeholder="В свободной форме"></textarea>
-      <button class="button popup-button" type="submit">Отправить</button> 
-    </form>
+      <p><textarea name="text" rows="10" cols="70" id="comment" placeholder="В свободной форме"></textarea></p>
+    </div>
+    
+    <button class="button popup-button" type="submit">Отправить</button> 
     <button class="close-button" type="button"><img src="img/close-cross.svg" width="21" height="21" alt="закрыть форму отправки"></button><!-- Здесь будет кнопка закрыть форму --> 
-  </section>
-</body>
+  </form>
+ </body>
 </html>

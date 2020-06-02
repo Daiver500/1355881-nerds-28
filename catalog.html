@@ -7,7 +7,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page-body">
-  <header>
+  <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
       <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии»">
@@ -18,7 +18,9 @@
         <li class="nav-item"><a class="nav-link">Магазин</a></li>
         <li class="nav-item"><a class="nav-link" href="blank.html">Контакты</a></li>
       </ul>
-      <a class="nav-link" href="blank.html">Корзина</a>
+      <div class="user-navigation">
+      <a class="nav-link bin" href="blank.html">Корзина</a>
+      </div>
     </nav>
   </header>
   <main>
@@ -26,11 +28,22 @@
     <section class="container">
       <h2 class="visually-hidden">Фильтр</h2>
       <form url="https://echo.htmlacademy.ru/" method="get">
-        <fieldset>
-          <legend class="text-form">Стоимость</legend>
-          <input class="range" type="range" min="1" max="15000" step="1">
-          <label class="range-text">от<input type="number" value="0"></label>
-          <label class="range-text">до<input type="number" value="15000"></label>
+        <fieldset class="filter-item">
+          <legend class="text-for-form">Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="width: 30%; margin-left: 20%">
+              </div>
+            </div>
+            <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
+            <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+            </div>
+          <div class="price-controls">
+          <label class="min-price range-text">от<input type="number" name="min-price" value="0"></label>
+          <label class="max-price range-text">до<input type="number" name="max-price" value="15000"></label>
+          </div>
+          </div>
         </fieldset>
         <fieldset>
           <legend class="text-form">Сетка</legend>
@@ -99,7 +112,7 @@
     <section class="container">
       <h2 class="visually-hidden">Выбор товара</h2>
       <ul class="catalog-list">
-        <li>
+        <li class="catalog-item">
           <img src="img/Sedona.jpg" width="360" height="576" alt="Информационный сайт для туристов">
           <div class="product-info">
             <a class="product-item-info" href="#">
@@ -109,7 +122,7 @@
             <a class="button price-button" href="#">9900</a>
           </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <img src="img/Pink.jpg" width="358" height="578" alt="Продуктовый лендинг">
           <div class="product-info">
             <a class="product-item-info" href="#">
@@ -119,7 +132,7 @@
             <a class="button price-button" href="#">9900</a>
           </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <img src="img/Barber.jpg" width="358" height="578" alt="Барбершоп">
           <div class="product-info">
             <a class="product-item-info" href="#">
@@ -129,7 +142,7 @@
             <a class="button price-button" href="#">9900</a>
           </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <img src="img/Mishka.jpg" width="358" height="578" alt="Интернет-магазин игрушек">
           <div class="product-info">
             <a class="product-item-info" href="#">
@@ -139,7 +152,7 @@
             <a class="button price-button" href="#">9900</a>
           </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <img src="img/Learn.jpg" width="358" height="578" alt="Повышение квалификации">
           <div class="product-info">
             <a class="product-item-info" href="#">
@@ -149,7 +162,7 @@
             <a class="button price-button" href="#">9900</a> 
           </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <img src="img/Kvast.jpg" width="358" height="578" alt="Производитель кваса">
           <div class="product-info">
             <a class="product-item-info" href="#">
@@ -167,7 +180,18 @@
         <button type="button" class="button catalog-button">Следующая</button>
       </div>
       </section>
-      <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="map"> 
+        <div class="marker">
+        <div class="contact-us">
+          <h4 class="contacts-header">NERDS DESIGN STUDIO</h4>
+          <p class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a class="address" href="tel:78122757575">тел.+7(812) 275-75-75</a>
+          <a class="button write-us-button" href="#">Напишите нам</a>
+      </div>
+      </div>
+    </div>
+      <!--<section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <img src="img/map.jpg" width="1440" height="416" alt="карта">
         <img src="img/map-marker.png" width="231" height="190" alt="логотип"> 
@@ -177,9 +201,9 @@
           <a class="address" href="tel:78122757575">тел.+7(812) 275-75-75</a>
           <a class="button write-us-button" href="#">Напишите нам</a>
         </div>
-      </section>
+      </section>-->
   </main>
-  <footer>
+  <footer class="main-footer">
     <div class="social">
       <ul class="social-list">
         <li>
@@ -193,23 +217,29 @@
         </li>
       </ul>
     </div>
+    <div>
       <p class="friendship">Давайте дружить, это выгодно!</p>
       <p class="offer">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
   </footer>
-  </footer>
-  <section class="container"><!-- Здесь будет всплывающая форма --> 
-    <form url="https://echo.htmlacademy.ru/" method="post">
-      <h1 class="popup-header">Напишите нам</h1>
+  <form class="popup-form" url="https://echo.htmlacademy.ru/" method="post">
+    <h1 class="popup-header">Напишите нам</h1>
+    <div class="popup-line">
       <label class="popup-item" for="name">Ваше имя:</label>
+      <p><input type="text" name="name" placeholder="Имя Фамилия"></p>
+    </div>
+    <div class="popup-line">
       <label class="popup-item" for="email:">Ваш email:</label>
+     <p><input type="text" name="email" id="email" placeholder="email@example.com"></p>
+    </div>
+    <div>
       <label class="popup-item" for="comment">Текст письма:</label>
-      <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-      <input type="text" name="email" id="email" placeholder="email@example.com">
-      <textarea name="text" rows="10" cols="50" id="comment" placeholder="В свободной форме"></textarea>
-      <button class="button popup-button" type="submit">Отправить</button> 
-    </form>
+      <p><textarea name="text" rows="10" cols="50" id="comment" placeholder="В свободной форме"></textarea></p>
+    </div>
+    
+    <button class="button popup-button" type="submit">Отправить</button> 
     <button class="close-button" type="button"><img src="img/close-cross.svg" width="21" height="21" alt="закрыть форму отправки"></button><!-- Здесь будет кнопка закрыть форму --> 
-  </section>
+  </form>
 </body>
 </html>
 
