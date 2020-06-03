@@ -105,6 +105,7 @@ margin: 0;
   min-width: 160px;
   height: 65px;
   margin-left: 140px;
+  margin-top: 65px;
 }
 
 .main-header-logo:hover,
@@ -120,6 +121,7 @@ margin: 0;
   list-style: none;
   padding: 0;
   margin-left: 202px;
+  margin-top: 75px;
   display: flex;
   flex-wrap: nowrap;
 }
@@ -154,7 +156,8 @@ margin: 0;
 .user-navigation .bin {
   padding-left: 284px;
   position: relative;
-  margin-top: 15px;
+  margin-top: 75px;
+  margin-bottom: 86px;
 }
 
 .bin::before {
@@ -166,10 +169,11 @@ margin: 0;
   background-repeat: no-repeat;
   background-position: 0 0;
   right: 240px;
+  top: 23px;
 }
 
 .description {
-  margin-bottom: 80px;
+  margin-bottom: 0px;
 }
 
 .description-list {
@@ -179,17 +183,31 @@ margin: 0;
   padding: 0;
 }
 
+.description-item{
+  margin-left: 140px;
+  display: flex;
+  flex-direction: column;
+}
+
 .slider-title, .main-title {
   font-size: 55px;
   line-height: 55px;
   color: var(--black);
   font-weight: 500;
   margin:0;
-  background-color: var(--light-grey)
+  background-color: var(--light-grey);
 }
 
 .main-title {
   text-align: center;
+}
+
+.slider-title {
+  margin-bottom: 25px;
+}
+
+.under-slider {
+  margin-bottom: 38px;
 }
 
 .button {
@@ -213,6 +231,7 @@ margin: 0;
 .slider-button {
   width: 240px;
   text-transform: none;
+  display: flex;
 }
 
 .button:hover,
@@ -226,17 +245,19 @@ margin: 0;
 }
 
 .services {
-  margin-bottom: 121px;
+  margin-bottom: 80px;
 }
 
 .service-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns:300px 300px 300px;
   column-gap: 100px;
   align-items: center;
   list-style: none; 
   margin: 0;
   padding: 0;
+  margin-left: 140px;
+  margin-top: 80px;
 }
 
 .green-button {
@@ -275,15 +296,21 @@ margin: 0;
   line-height: 30px;
   font-weight: bold;   
   color: var(--black);
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
-/**стили для  разграничительной полосы**/
-/**.company-section-border {
+.service-description {
+  margin-bottom: 32px;
+}
+
+.company-section-border {
   border-bottom-color: var(--light-grey);
   border-bottom-style: solid;
   border-bottom-width: 2px;
   margin-left: 140px;
-  margin-right: 142px;**/
+  margin-right: 142px;
+}
 
 .about-company {
   display: flex;
@@ -291,8 +318,9 @@ margin: 0;
   list-style: none; 
   margin: 0;
   padding: 0;
-  min-width: 1174px;
-  margin-bottom: 80px;
+  min-width: 1200px;
+  margin-bottom: 73px;
+  margin-left: 140px;
 }
 
 .about {
@@ -309,6 +337,7 @@ margin: 0;
   color: var(--black);
   margin-top: 73px;
   margin-bottom: 32px;
+  margin-right: 149px;
 }
 
 .about-list {
@@ -320,13 +349,20 @@ margin: 0;
   padding: 0;
 }
 
-.about-item {
-  min-width: 500px;
+.about-about {
+  margin-right: 140px;
+  margin-bottom: 40px;
 }
 
-.table-header{
-  text-align: center;
-  margin-bottom: 31px;
+.about-item {
+  min-width: 500px;
+  margin-bottom: 7px;
+}
+
+.about-list-header {
+  margin-bottom: 23px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .table {
@@ -337,11 +373,7 @@ margin: 0;
 
 .table img {
   margin-bottom: 37px;
-}
-
-.about-list-header {
-  font-weight: bold;
-  text-transform: uppercase;
+  margin-top: 39px;
 }
 
 .table-header {
@@ -349,6 +381,9 @@ margin: 0;
   text-transform: uppercase;
   text-align: center;
   color: var(--black);
+  margin-right: 140px;
+  margin-bottom: 31px;
+  min-width: 358px;
 }
 
 .table-item-description {
@@ -369,6 +404,7 @@ margin: 0;
 .table-item {
   font-size: 16px;
   line-height: 18px;  
+  text-align: left;
 }
 
 .company-section-border {
@@ -377,6 +413,8 @@ margin: 0;
   border-bottom-width: 2px;
   margin-left: 140px;
   margin-right: 142px;
+  margin-top: 73px;
+  margin-bottom: 46px;
 }
 
 .partners-list {
@@ -385,12 +423,11 @@ margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: nowrap;
-  padding: 10px 10px;
 }
 
 .partner {
   opacity: 0.2;
-  padding: 10px 95px;
+  margin-left: 172px;
 }
 
 .partner:hover,
@@ -415,6 +452,8 @@ margin: 0;
   height: 416px;
   background-image:url(img/map.jpg);
   background-repeat: no-repeat;
+  margin-bottom: 68px;
+  margin-top: 80px;
 }
   
 .marker {
@@ -456,11 +495,16 @@ margin: 0;
   display:flex;
 }
 
+.social-item {
+  margin-left: 140px;
+}
+
 .social-list {
   list-style:none;
   margin: 0;
   padding: 0;
   display:flex;
+
 }
 
 .social-icon {
@@ -509,8 +553,8 @@ margin: 0;
   line-height: 36px;
   color: var(--black);
   margin-left: 139px;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin-bottom: 10px;
+  margin-top: 7px;
   min-width: 660px;
 }
 
@@ -519,7 +563,6 @@ margin: 0;
   line-height: 22px;
   color: var(--medium-dark);
   margin-left: 139px;
-  margin-top: 10px;
   min-width: 373px;
 }
 
@@ -787,14 +830,15 @@ input[type="checkbox"]:disabled {
 
 .catalog-list {
   display: grid;
-  column-gap:40px;
+  column-gap:42px;
   row-gap: 31px;
   list-style: none; 
   margin: 0;
   padding: 0;
   grid-template-columns: 360px 360px;
-  grid-template-rows:    578px 578px;
   margin-bottom: 55px;
+  margin-left: 540px;
+  margin-right: 141px;
 }
 
 .catalog-item {
@@ -827,6 +871,7 @@ input[type="checkbox"]:disabled {
   line-height: 30px;
   color: var(--black);
   text-transform: uppercase;
+  margin: 0;
 }
 
 .product-name:hover,
@@ -841,8 +886,17 @@ input[type="checkbox"]:disabled {
 
 .product-info {
   width: 360px;
+  height: 231px;
   background-color: var(--light-grey);
   max-height: 231px;
+}
+
+.product-item-info {
+  padding-top: 26px;
+  padding-bottom: 12px;
+  padding-left: 145px;
+  padding-right: 144px;
+  margin: 0;
 }
 
 .product-description {
@@ -854,10 +908,21 @@ input[type="checkbox"]:disabled {
   flex-wrap: wrap;
   align-items: center;
   width: 255px;
+  margin: 0;
+  padding-left: 52px;
+  padding-right: 53px;
+  padding-bottom: 32px;
 }
 
 .price-button {
   min-width: 250px;
+  padding-left: 72px;
+  padding-right: 72px;
+  margin-left: 80px;
+}
+
+.pagination {
+  margin-left: 540px;
 }
 
 .pagination-item {
