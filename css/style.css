@@ -25,6 +25,10 @@
        url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -58,7 +62,7 @@
   --extra-light-grey: #DFDFDF;
   --twice-extra-light-grey: #D5D5D5;
   }
-
+  
 html {
   height: 100%;
 }
@@ -70,6 +74,12 @@ html {
   align-content: start;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -78,7 +88,7 @@ body {
   line-height: 24px;
   font-weight: normal;
   min-width: 1200px;
-  max-width: 1460px;
+  max-width: 1440px;
 }
 
 a {
@@ -87,7 +97,6 @@ a {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 .main-navigation {
@@ -105,7 +114,7 @@ margin: 0;
   min-width: 160px;
   height: 65px;
   margin-left: 140px;
-  margin-top: 65px;
+  margin-top: 49px;
 }
 
 .main-header-logo:hover,
@@ -128,7 +137,7 @@ margin: 0;
 
 .nav-link{
   display:block;
-  padding: 15px 44px;
+  padding: 0 44px;
 }
 
 .nav-link:link{
@@ -157,7 +166,6 @@ margin: 0;
   padding-left: 284px;
   position: relative;
   margin-top: 75px;
-  margin-bottom: 86px;
 }
 
 .bin::before {
@@ -169,7 +177,7 @@ margin: 0;
   background-repeat: no-repeat;
   background-position: 0 0;
   right: 240px;
-  top: 23px;
+  top: 9px;
 }
 
 .description {
@@ -185,8 +193,27 @@ margin: 0;
 
 .description-item{
   margin-left: 140px;
-  display: flex;
-  flex-direction: column;
+  background-repeat: no-repeat;
+  min-width: 1157px;
+  min-height: 431px;
+}
+
+.slider-one{
+  background-image: url(img/slide1.png);
+  background-position-x: 395px;
+  background-position-y: 0;
+}
+
+.slider-two{
+  background-image: url(img/slide2.png);
+  background-position-x: 395px;
+  background-position-y: 0;
+}
+
+.slider-three{
+  background-image: url(img/slide3.png);
+  background-position-x: 395px;
+  background-position-y: 0;
 }
 
 .slider-title, .main-title {
@@ -200,14 +227,43 @@ margin: 0;
 
 .main-title {
   text-align: center;
+  height: 335px;
 }
 
-.slider-title {
+.slider-title-main {
   margin-bottom: 25px;
+  width: 370px;
+  padding-top: 78px;
 }
 
-.under-slider {
-  margin-bottom: 38px;
+.under-slider-main {
+  margin-top: 0;
+  margin-bottom: 55px;
+  width: 360px;
+}
+
+.slider-title-second {
+  margin-bottom: 37px;
+  width: 570px;
+  padding-top: 78px;
+}
+
+.under-slider-second {
+  margin-top: 0;
+  margin-bottom: 43px;
+  width: 420px;
+}
+
+.slider-title-third {
+  margin-bottom: 37px;
+  width: 450px;
+  padding-top: 78px;
+}
+
+.under-slider-third {
+  margin-top: 0;
+  margin-bottom: 42px;
+  width: 360px;
 }
 
 .button {
@@ -231,7 +287,8 @@ margin: 0;
 .slider-button {
   width: 240px;
   text-transform: none;
-  display: flex;
+  margin-bottom: 80px;
+  margin-top: 38px;
 }
 
 .button:hover,
@@ -316,8 +373,6 @@ margin: 0;
   display: flex;
   align-items: center;
   list-style: none; 
-  margin: 0;
-  padding: 0;
   min-width: 1200px;
   margin-bottom: 73px;
   margin-left: 140px;
@@ -338,6 +393,7 @@ margin: 0;
   margin-top: 73px;
   margin-bottom: 32px;
   margin-right: 149px;
+  width: 651px;
 }
 
 .about-list {
@@ -350,7 +406,7 @@ margin: 0;
 }
 
 .about-about {
-  margin-right: 140px;
+  margin:0;
   margin-bottom: 40px;
 }
 
@@ -360,6 +416,7 @@ margin: 0;
 }
 
 .about-list-header {
+  margin-top:0;
   margin-bottom: 23px;
   font-weight: bold;
   text-transform: uppercase;
@@ -391,6 +448,7 @@ margin: 0;
  font-size: 45px;
  line-height: 64px;
  color: var(--black);
+ padding-bottom: 11px;
 }
 
 .table-header.percent {
@@ -407,14 +465,26 @@ margin: 0;
   text-align: left;
 }
 
-.company-section-border {
+.section-border {
   border-bottom-color: var(--light-grey);
   border-bottom-style: solid;
   border-bottom-width: 2px;
   margin-left: 140px;
   margin-right: 142px;
+}
+
+.company-section-border {
+  margin-top: 95px;
+}
+
+.partner-section-border-top {
   margin-top: 73px;
   margin-bottom: 46px;
+}
+
+.partner-section-border-bottom {
+  margin-top: 49px;
+  margin-bottom: 80px;
 }
 
 .partners-list {
@@ -425,9 +495,25 @@ margin: 0;
   flex-wrap: nowrap;
 }
 
+.partner-one {
+  margin-right: 95px;
+  margin-left: 172px;
+}
+
+.partner-two {
+  margin-right: 104px;
+}
+
+.partner-three{
+  margin-right: 120px;
+}
+
+.partner-four{
+  margin-right: 183px;
+}
+
 .partner {
   opacity: 0.2;
-  margin-left: 172px;
 }
 
 .partner:hover,
@@ -439,38 +525,9 @@ margin: 0;
   opacity: 0.1;
 }
 
-/**стили для  разграничительной полосы**/
-/**.company-section-border {
-  border-bottom-color: var(--light-grey);
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  margin-left: 140px;
-  margin-right: 142px;**/
-
-.map {
-  width: 1440px;
-  height: 416px;
-  background-image:url(img/map.jpg);
-  background-repeat: no-repeat;
-  margin-bottom: 68px;
-  margin-top: 80px;
-}
-  
-.marker {
-  background-image:url(img/map-marker.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  padding-top: 54px;
-  padding-bottom: 54px;
-  padding-right: 881px;
-  padding-left: 140px;
-}
-
 .contact-us {
   min-width: 319px;
   max-height: 100%;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .contacts-header {
@@ -504,7 +561,6 @@ margin: 0;
   margin: 0;
   padding: 0;
   display:flex;
-
 }
 
 .social-icon {
@@ -514,6 +570,7 @@ margin: 0;
   border-radius: 50%;
   display: inline-block;
   margin-right: 9px;
+  margin-top: 68px;
 }
 
 .vk img {
@@ -521,6 +578,7 @@ margin: 0;
   padding-bottom: 31px;
   padding-left: 25px;
   padding-right: 27px;
+  box-sizing: content-box;
 }
 
 .fb img {
@@ -528,6 +586,7 @@ margin: 0;
   padding-bottom: 26px;
   padding-left: 33px;
   padding-right: 33px;
+  box-sizing: content-box;
 }
 
 .insta img {
@@ -535,6 +594,7 @@ margin: 0;
   padding-bottom: 28px;
   padding-left: 28px;
   padding-right: 29px;
+  box-sizing: content-box;
 }
 
 .social-icon:hover,
@@ -556,6 +616,7 @@ margin: 0;
   margin-bottom: 10px;
   margin-top: 7px;
   min-width: 660px;
+  margin-top: 75px;
 }
 
 .offer {
@@ -636,6 +697,11 @@ textarea:focus {
   text-transform: uppercase;
 }
 
+form {
+  width: 270px;
+  height: 780px;
+}
+
 .filter-item {
   margin: 0;
   padding: 0;
@@ -645,6 +711,7 @@ textarea:focus {
 .range-filter {
   width: 260px;
   margin-top: 49px;
+  box-sizing:content-box;
 }
 
 .filter-item legend {
