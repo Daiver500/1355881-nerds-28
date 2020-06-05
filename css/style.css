@@ -74,11 +74,11 @@ html {
   align-content: start;
 }
 
-.container {
+/**.container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-}
+}**/
 
 body {
   margin: 0;
@@ -227,7 +227,10 @@ margin: 0;
 
 .main-title {
   text-align: center;
-  height: 335px;
+  height: 300px;
+  padding-top: 78px;
+  padding-bottom: 108px;
+  margin-bottom: 55px;
 }
 
 .slider-title-main {
@@ -471,6 +474,7 @@ margin: 0;
   border-bottom-width: 2px;
   margin-left: 140px;
   margin-right: 142px;
+  width: 1158px;
 }
 
 .company-section-border {
@@ -627,6 +631,10 @@ margin: 0;
   min-width: 373px;
 }
 
+.popup-form{
+  min-width: 960px;
+}
+
 .popup-header {
   font-weight: bold;
   font-size: 45px;
@@ -697,15 +705,16 @@ textarea:focus {
   text-transform: uppercase;
 }
 
-form {
-  width: 270px;
-  height: 780px;
+.form-page {
+  width: 25.5%;
+  max-height: 780px;
 }
 
 .filter-item {
   margin: 0;
   padding: 0;
   border: none;
+  box-sizing: content-box;
 }
 
 .range-filter {
@@ -719,6 +728,7 @@ form {
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 700;
+  box-sizing: content-box;
 }
 
 .range-controls {
@@ -730,6 +740,7 @@ form {
   padding-left: 20px;
   background-color: #f1f1f1;
   border-radius: 5px;
+  box-sizing: content-box;
 }
 
 .range-controls .scale {
@@ -819,15 +830,6 @@ input[type="radio"]:disabled{
   opacity: 0.3;
 }
 
-.catalog-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 10px;
-  align-items: center;
-}
-
 .checkbox-form {
   list-style:none;
   margin: 0;
@@ -904,12 +906,11 @@ input[type="checkbox"]:disabled {
   padding: 0;
   grid-template-columns: 360px 360px;
   margin-bottom: 55px;
-  margin-left: 540px;
-  margin-right: 141px;
 }
 
-.catalog-item {
-  min-width: 360px;
+.catalog {
+  width: 74.5%;
+  max-height: 620px;
 }
 
 .catalog-button {
@@ -956,6 +957,7 @@ input[type="checkbox"]:disabled {
   height: 231px;
   background-color: var(--light-grey);
   max-height: 231px;
+  box-sizing:content-box;
 }
 
 .product-item-info {
@@ -964,6 +966,7 @@ input[type="checkbox"]:disabled {
   padding-left: 145px;
   padding-right: 144px;
   margin: 0;
+  box-sizing:content-box;
 }
 
 .product-description {
@@ -979,6 +982,7 @@ input[type="checkbox"]:disabled {
   padding-left: 52px;
   padding-right: 53px;
   padding-bottom: 32px;
+  box-sizing:content-box;
 }
 
 .price-button {
@@ -989,7 +993,7 @@ input[type="checkbox"]:disabled {
 }
 
 .pagination {
-  margin-left: 540px;
+  margin-bottom: 60px;
 }
 
 .pagination-item {
