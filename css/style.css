@@ -703,11 +703,15 @@ textarea:focus {
   line-height: 30px;
   color: var(--black);
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .form-page {
   width: 25.5%;
   max-height: 780px;
+  display: flex;
+  margin-right: 140px;
+  margin-left: 140px;
 }
 
 .filter-item {
@@ -861,6 +865,7 @@ input[type="checkbox"]:disabled {
   min-width: 759px;
   max-height: 31px;
   margin-bottom: 48px;
+  display:flex;
 }
 
 .sort {
@@ -868,6 +873,7 @@ input[type="checkbox"]:disabled {
   margin: 0;
   padding: 0;
   margin-bottom: 80px;
+  display: flex;
 }
 
 .sort-link {
@@ -876,6 +882,7 @@ input[type="checkbox"]:disabled {
   color: var(--black);
   text-transform: uppercase; 
   opacity: 0.3;
+  padding-right: 25px;
 }
 
 .sort-link:hover,
@@ -904,19 +911,21 @@ input[type="checkbox"]:disabled {
 }
 
 .catalog-list {
-  display: grid;
-  column-gap:42px;
-  row-gap: 31px;
   list-style: none; 
   margin: 0;
   padding: 0;
-  grid-template-columns: 360px 360px;
-  margin-bottom: 55px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog {
-  width: 74.5%;
+  width: auto;
   max-height: 620px;
+}
+
+.catalog-item{
+  padding-right: 42px;
+  padding-bottom: 30px;
 }
 
 .catalog-button {
@@ -1018,5 +1027,9 @@ input[type="checkbox"]:disabled {
 .pagination-item:active{
   background-color: var(--twice-extra-light-grey); 
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.test {
+  display:flex;
 }
 
