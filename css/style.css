@@ -231,6 +231,7 @@ margin: 0;
   padding-top: 78px;
   padding-bottom: 108px;
   margin-bottom: 55px;
+  max-height: 241px;
 }
 
 .slider-title-main {
@@ -861,6 +862,11 @@ input[type="checkbox"]:disabled {
   opacity: 0.1;
 }
 
+.test {
+  display:flex;
+  min-height: 2750px;
+}
+
 .sort-container {
   min-width: 759px;
   max-height: 31px;
@@ -1027,9 +1033,5 @@ input[type="checkbox"]:disabled {
 .pagination-item:active{
   background-color: var(--twice-extra-light-grey); 
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-}
-
-.test {
-  display:flex;
 }
 
