@@ -857,6 +857,12 @@ input[type="checkbox"]:disabled {
   opacity: 0.1;
 }
 
+.sort-container {
+  min-width: 759px;
+  max-height: 31px;
+  margin-bottom: 48px;
+}
+
 .sort {
   list-style: none;
   margin: 0;
