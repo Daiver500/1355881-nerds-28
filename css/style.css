@@ -173,7 +173,7 @@ margin: 0;
   position: absolute;
   width: 15px;
   height: 15px;
-  background-image: url(img/cart.svg);
+  background-image: url(../img/cart.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   right: 240px;
@@ -199,19 +199,19 @@ margin: 0;
 }
 
 .slider-one{
-  background-image: url(img/slide1.png);
+  background-image: url(../img/slide1.png);
   background-position-x: 395px;
   background-position-y: 0;
 }
 
 .slider-two{
-  background-image: url(img/slide2.png);
+  background-image: url(../img/slide2.png);
   background-position-x: 395px;
   background-position-y: 0;
 }
 
 .slider-three{
-  background-image: url(img/slide3.png);
+  background-image: url(../img/slide3.png);
   background-position-x: 395px;
   background-position-y: 0;
 }
