@@ -1011,8 +1011,8 @@ input[type="checkbox"]:disabled {
   padding-right: 42px;
   margin-bottom: 30px;
 }
-
 .catalog-item img {
+  border-radius: 1%;
   min-width: 360px;
 }
 
@@ -1064,8 +1064,8 @@ input[type="checkbox"]:disabled {
 }
 
 .product-item-info {
-  padding-top: 26px;
-  padding-bottom: 12px;
+  /*padding-top: 26px;
+  padding-bottom: 12px;8*/
   padding-left: 145px;
   padding-right: 144px;
   margin: 0;
