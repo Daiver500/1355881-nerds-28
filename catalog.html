@@ -49,10 +49,31 @@
               </div>
               </div>
             </fieldset>
-            <fieldset>
-              <legend class="text-form">Сетка</legend>
+            <fieldset class="radio-item">
+              <legend class="text-form">Сетка:</legend>
               <ul class="radio-form">
-                <li>
+                <li class="radiobox-line">
+                  <label class="radio text-for-form">
+                   <input class="radio_input" type="radio" name="net" value="Adaptive"checked>
+                   <span class="radio_box"></span>
+                   Адаптивная
+                  </label>
+                </li>
+                <li class="radiobox-line">
+                  <label class="radio text-for-form">
+                   <input class="radio_input" type="radio" name="net" value="Adaptive">
+                   <span class="radio_box"></span>
+                   Фиксированная
+                  </label>
+                </li>
+                <li class="radiobox-line">
+                  <label class="radio text-for-form">
+                   <input class="radio_input" type="radio" name="net" value="Adaptive">
+                   <span class="radio_box"></span>
+                   Резиновая
+                  </label>
+                </li>
+                <!--<li>
                   <input type="radio" name="net" value="Adaptive" checked id="adaptive">
                   <label class="text-for-form" for="adaptive">Адаптивная</label>
                 </li>
@@ -63,32 +84,47 @@
                 <li>
                   <input type="radio" name="net" value="Rubber" id="rubber">
                   <label class="text-for-form" for="rubber">Резиновая</label>
-                </li>
+                </li>-->
               </ul>
            </fieldset>
-           <fieldset">
-             <legend class="text-form">Особенности</legend>
+           <fieldset class="checkbox-item">
+             <legend class="text-form">Особенности:</legend>
              <ul class="checkbox-form">
-               <li>
-                 <input type="checkbox" name="Slider" checked id="slider">
-                 <label class="text-for-form" for="slider">Слайдер</label>
+               <li class="checkbox-line">
+                 <label class="check text-for-form">
+                  <input class="check_input" type="checkbox" name="Slider" checked>
+                  <span class="check_box"></span>
+                  Слайдер
+                 </label>
                </li>
-               <li>
-                 <input type="checkbox" name="Advantages" id="block">
-                 <label class="text-for-form" for="block">Блок преимуществ</label>
-               </li>
-               <li>
-                 <input type="checkbox" name="News" checked id="news">
-                 <label class="text-for-form" for="news">Новости</label>
-               </li>
-               <li>
-                 <input type="checkbox" name="Gallery" id="gallery">
-                 <label class="text-for-form" for="gallery">Галерея</label>
-               </li>
-               <li>
-                 <input type="checkbox" name="TrashBin" id="bin">
-                 <label class="text-for-form" for="bin">Корзина</label>
-               </li>
+               <li class="checkbox-line">
+                <label class="check text-for-form">
+                 <input class="check_input" type="checkbox" name="Block">
+                 <span class="check_box"></span>
+                 Блок преимуществ
+                </label>
+              </li>
+              <li class="checkbox-line">
+                <label class="check text-for-form">
+                 <input class="check_input" type="checkbox" name="News" checked>
+                 <span class="check_box"></span>
+                 Новости
+                </label>
+              </li>
+              <li class="checkbox-line">
+                <label class="check text-for-form">
+                 <input class="check_input" type="checkbox" name="Gallery">
+                 <span class="check_box"></span>
+                 Галерея
+                </label>
+              </li>
+              <li class="checkbox-line">
+                <label class="check text-for-form">
+                 <input class="check_input" type="checkbox" name="Bin">
+                 <span class="check_box"></span>
+                 Корзина
+                </label>
+              </li>
              </ul>
            </fieldset>
            <button class="button catalog-button" type="button">ПОКАЗАТЬ</button>
@@ -115,7 +151,7 @@
             </ul>
             <div class="up-down">
             <a class="triangle" href="#"><img src="img/icon-up.svg"></a>
-            <a class="triangle" href="#"><img src="img/icon-down.svg"></a>
+            <a class="triangle" href="#"><img src="img/icon-down.svg"></a> 
             </div>
           </div>
        </div>
