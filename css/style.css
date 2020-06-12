@@ -229,8 +229,8 @@ justify-content: space-between;
   min-width: 745px;
   padding-top: 78px;
   padding-bottom: 108px;
-  padding-right: 348px;
-  padding-left: 347px;
+  padding-right: 248px;
+  padding-left: 247px;
   min-height: 55px;
   background-color: var(--light-grey);
 }
@@ -428,7 +428,7 @@ justify-content: space-between;
   list-style: none; 
   flex-wrap: wrap;
   margin: 0;
-  padding-left:0;
+  padding-left: 32px;
 }
 
 .about-about {
@@ -441,6 +441,16 @@ justify-content: space-between;
 .about-item {
   min-width: 399px;
   margin-bottom: 7px;
+  position: relative;
+}
+
+.about-item::before {
+  content: "";
+  position: absolute;
+  bottom: 9px;
+  left: -35px;
+  width: 25px;
+  border: 1px solid var(--light-red);
 }
 
 .about-list-header {
@@ -1045,6 +1055,11 @@ input[type="checkbox"]:disabled {
 .triangle:active {
   opacity: 1;  
   font-size: 0;
+}
+
+.up-dowm{
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog-list {
