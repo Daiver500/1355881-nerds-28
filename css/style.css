@@ -213,6 +213,9 @@ justify-content: space-between;
   background-position-y: 0;
 }
 
+.slider-controls {
+  }
+
 .slider-title, .main-title {
   font-size: 55px;
   line-height: 55px;
@@ -1007,21 +1010,6 @@ textarea:focus {
   background-repeat: no-repeat;
 }
 
-/*input[type="radio"]{
- min-width: 25px;
- height: 25px;
- opacity: 0.4;
-}
-
-input[type="radio"]:hover,
-input[type="radio"]:focus {
-  opacity: 1;
-}
-
-input[type="radio"]:disabled{
-  opacity: 0.1;
-}*/
-
 .checkbox-item{
   border:none;
 }
@@ -1080,27 +1068,6 @@ input[type="radio"]:disabled{
   background-image: url(../img/checkbox-on-disabled.svg);
   background-repeat: no-repeat;
 }
-
-/*input[type="checkbox"] {
-  min-width: 23px;
-  height: 23px;
-  opacity: 0.4;
-}
-
-input[type="checkbox"]:checked {
-  min-width: 26px;
-  height: 23px;
-  opacity: 0.4;
-}
-
-input[type="checkbox"]:hover,
-input[type="checkbox"]:focus {
-  opacity: 1;
-}
-
-input[type="checkbox"]:disabled {
-  opacity: 0.1;
-}*/
 
 .main-section {
   display:flex;
