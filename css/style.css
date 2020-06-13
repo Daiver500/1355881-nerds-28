@@ -596,31 +596,22 @@ justify-content: space-between;
 .partners-item:not(:last-child)::after {
   content: "";
   position: absolute;
-  bottom: 13px;
-  left: 270px;
   width: 0px;
   height: 52px;
   border-right: 2px solid var(--light-grey);
+  left: 270px;
+}
+
+.partners-item:nth-child(3)::after {
+  bottom: 13px;
 }
 
 .partners-item:nth-child(1)::after {
-  content: "";
-  position: absolute;
   bottom: 5px;
-  left: 270px;
-  width: 0px;
-  height: 52px;
-  border-right: 2px solid var(--light-grey);
 }
 
 .partners-item:nth-child(2)::after {
-  content: "";
-  position: absolute;
   bottom: 22px;
-  left: 270px;
-  width: 0px;
-  height: 52px;
-  border-right: 2px solid var(--light-grey);
 }
 
 .partner:hover,
