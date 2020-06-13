@@ -1185,9 +1185,27 @@ textarea:focus {
 .catalog-item{
   padding-right: 42px;
   margin-bottom: 30px;
+  padding-top: 41px;
   display: flex;
   flex-direction: column;
   position: relative;
+}
+
+.catalog-item::before {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 40px;
+  background-image: url(../img/browser1.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  right: 42px;
+  top:-1px;
+  opacity: 0.12;
+}
+
+.catalog-item:hover::before {
+  opacity:1;
 }
 
 .catalog-item img {
