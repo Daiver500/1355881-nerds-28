@@ -1253,6 +1253,15 @@ textarea:focus {
   color: var(--black);
 }
 
+.card {
+  display: none;
+}
+
+.card-current {
+  display:block;
+}
+
+
 .product-info {
   min-width: 360px;
   min-height: 231px;
@@ -1261,7 +1270,6 @@ textarea:focus {
   box-sizing:content-box;
   position: absolute;
   top: 385px;
-  /*display: none;*/
 }
 
 .product-item-info {
