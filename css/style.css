@@ -784,18 +784,18 @@ a.address {
 }
 
 .popup-form{
-  max-width: 960px;
-  max-height: 590px;
+  width: 960px;
+  min-height: 590px;
   position: fixed;
-  top: 650px;
+  top: calc(50% - 295px);
   right: 0;
-  bottom: 0;
+  bottom: auto;
   left: 0;
   margin: auto;
   text-align: center;
   color: var(--basic-black);
   background-color: var(--white);
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   display:none;
 }
 
