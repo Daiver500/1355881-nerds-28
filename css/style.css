@@ -412,10 +412,20 @@ justify-content: space-between;
   list-style: none; 
   min-width: 1200px;
   margin-bottom: 73px;
-  position: relative;
+  /*position: relative;*/
 }
 
-.about-company::before {
+.border::after {
+  content: "";
+  position: absolute;
+  top: 500px;
+  left: 500px;
+  width: 1158px;
+  height: 2px;
+  border: 1px solid var(--red);
+}
+
+/*.about-company::before {
   content: "";
   position: absolute;
   top: -9px;
@@ -431,7 +441,7 @@ justify-content: space-between;
   left: 0px;
   width: 1158px;
   border: 1px solid var(--light-grey);
-}
+}*/
 
 .about {
   display: flex;
@@ -546,17 +556,17 @@ justify-content: space-between;
 .main-partners {
   padding-top: 46px;
   padding-bottom: 44px;
-  position:relative;
+  /*position:relative;*/
 }
 
-.main-partners::after {
+/*.main-partners::after {
   content: "";
   position: absolute;
   bottom: -9px;
   left: 0px;
   width: 1158px;
   border: 1px solid var(--light-grey);
-}
+}*/
 
 .partners-list {
   list-style: none;
