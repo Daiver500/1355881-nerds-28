@@ -1149,7 +1149,7 @@ textarea:focus {
   opacity: 1;
 }
 
-.triangle {
+/*.triangle {
   opacity: 0.2;
   font-size: 0;
 }
@@ -1163,6 +1163,36 @@ textarea:focus {
 .triangle:active {
   opacity: 1;  
   font-size: 0;
+}*/
+
+.up-down button {
+  padding: 0px;
+  margin-right: 18px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--white);
+  border: 2px solid var(--white);
+  opacity: 0.2;
+}
+
+.up-down button:hover {
+  opacity: 0.6;
+}
+
+.up-down button:active {
+  opacity: 1;
+}
+
+.down {
+  background-image:url(../img/icon-down.svg);
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+.up {
+  background-image:url(../img/icon-up.svg);
+  background-repeat:no-repeat;
+  background-position: center;
 }
 
 .up-dowm{
@@ -1261,7 +1291,6 @@ textarea:focus {
   display:block;
 }
 
-
 .product-info {
   min-width: 360px;
   min-height: 231px;
@@ -1320,3 +1349,23 @@ textarea:focus {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
+.up-down button {
+  padding: 0px;
+  margin-right: 18px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.down {
+  background-image:url(../img/icon-down.svg);
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+.up {
+  background-image:url(../img/icon-up.svg);
+  background-repeat:no-repeat;
+  background-position: center;
+}
