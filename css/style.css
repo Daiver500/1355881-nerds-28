@@ -242,6 +242,7 @@ justify-content: space-between;
   border: 2px solid var(--white);
   border-radius: 50%;
   cursor: pointer;
+  position: relative;
 }
 
 .slider-controls .current {
@@ -645,12 +646,12 @@ justify-content: space-between;
   opacity: 0.1;
 }
 
-.marker {
+/*.marker {
   position: absolute;
   left: 100%;
   top: 20%;
   transform: translateX(-580px);
-}
+}*/
 
 .contacts {
   display: flex;
