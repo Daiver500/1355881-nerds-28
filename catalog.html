@@ -217,9 +217,10 @@
      </section>
     </section>
     <section class="contacts catalog-contacts">
-      <section class="contacts">
+      <section class="contacts map">
         <h2 class="visually-hidden">Контакты</h2>
         <img src="img/map.jpg" width="100%" height="100%" alt="карта">
+        <button class="close-button" type="button" aria-label="Закрыть"></button>
          <!--<img class="marker" src="img/map-marker.png" width="231" height="190" alt="логотип">-->
         <div class="contact-us">
           <h4 class="contacts-header">NERDS DESIGN STUDIO</h4>
@@ -251,24 +252,25 @@
     </div>
     </section>
     </footer>
-  <form class="popup-form" url="https://echo.htmlacademy.ru/" method="post">
-    <h2 class="popup-header">Напишите нам</h2>
-    <div class="popup-line">
-      <label class="popup-item" for="name">Ваше имя:</label>
-      <p><input type="text" name="name" placeholder="Имя Фамилия"></p>
-    </div>
-    <div class="popup-line">
-      <label class="popup-item" for="email:">Ваш email:</label>
-     <p><input type="text" name="email" id="email" placeholder="email@example.com"></p>
-    </div>
-    <div>
-      <label class="popup-item" for="comment">Текст письма:</label>
-      <p><textarea name="text" rows="10" cols="50" id="comment" placeholder="В свободной форме"></textarea></p>
-    </div>
-    
-    <button class="button popup-button" type="submit">Отправить</button> 
-    <button class="close-button" type="button"><img src="img/close-cross.svg" width="21" height="21" alt="закрыть форму отправки"></button><!-- Здесь будет кнопка закрыть форму --> 
-  </form>
+    <section class="popup">
+      <h2 class="popup-header">Напишите нам</h2>
+      <form class="popup-form" url="https://echo.htmlacademy.ru/" method="post">
+        <p class="popup-line">
+          <label class="popup-item" for="name">Ваше имя:</label>
+          <input type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="popup-line email">
+          <label class="popup-item" for="email:">Ваш email:</label>
+          <input type="email" name="email" id="email" placeholder="email@example.com">
+        </p>
+        <p class="popup-line">
+          <label class="popup-item" for="comment">Текст письма:</label>
+          <textarea name="text" rows="10" cols="50" id="comment" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button popup-button" type="submit">Отправить</button> 
+      </form>
+      <button class="close-button" type="button" aria-label="Закрыть"></button>
+    </section>
 </body>
 </html>
 
