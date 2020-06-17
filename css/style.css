@@ -1,3 +1,5 @@
+/* ---------- Шрифты----------------*/
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -25,10 +27,12 @@
        url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
 }
 
+/* ---------- Пока не понял, что это, но нужно ----------------*/
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
+/* ---------- Скрываем заголовки ----------------*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -40,6 +44,7 @@
   overflow: hidden;
 }
 
+/* ---------- Цвета ----------------*/
 :root {
   --light-grey: #EEEEEE;
   --medium-grey: #DFDFDF;
@@ -99,6 +104,7 @@ a {
   padding-top: 49px;
 }
 
+/* ---------- Навигация и шапка ----------------*/
 .main-navigation {
 font-size: 16px;
 line-height: 30px;
@@ -180,6 +186,18 @@ justify-content: space-between;
   top: 33px;
 }
 
+.main-title {
+  text-align: center;
+  min-width: 745px;
+  padding-top: 72px;
+  padding-bottom: 108px;
+  padding-right: 248px;
+  padding-left: 247px;
+  min-height: 55px;
+  background-color: var(--light-grey);
+}
+/* ---------- Слайдер ----------------*/
+
 .description {
   background-color: var(--light-grey);
   position: relative;
@@ -231,7 +249,7 @@ justify-content: space-between;
   transform: translateX(-50%);
 }
 
-.slider-controls button {
+.toggle-button {
   padding: 0px;
   margin-right: 13px;
   width: 18px;
@@ -243,10 +261,18 @@ justify-content: space-between;
   position: relative;
 }
 
-.slider-controls .current {
-  background-image: url(../img/slider-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.toggle-button.active::before {
+  content: "";
+  padding: 0px;
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  border: 2px solid var(--light-grey);
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  left: 3px;
 }
 
 .slider-title, .main-title {
@@ -255,17 +281,6 @@ justify-content: space-between;
   color: var(--black);
   font-weight: 500;
   margin:0;
-}
-
-.main-title {
-  text-align: center;
-  min-width: 745px;
-  padding-top: 72px;
-  padding-bottom: 108px;
-  padding-right: 248px;
-  padding-left: 247px;
-  min-height: 55px;
-  background-color: var(--light-grey);
 }
 
 .slider-title-main {
@@ -310,6 +325,7 @@ justify-content: space-between;
   margin-bottom: 42px;
 }
 
+/* ---------- Кнопки ----------------*/
 .button {
   min-width: 160px;
   font-size: 16px;
@@ -343,21 +359,6 @@ justify-content: space-between;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.services {
-  padding-top: 80px;
-  padding-bottom: 95px;
-}
-
-.service-list {
-  display: grid;
-  grid-template-columns:300px 300px 300px;
-  column-gap: 100px;
-  align-items: center;
-  list-style: none; 
-  margin: 0;
-  padding: 0;
-}
-
 .green-button {
   background: var(--light-green);
   min-width: 160px;
@@ -388,6 +389,31 @@ justify-content: space-between;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1); 
 }
 
+.write-us-button {
+  min-width: 219px;
+  display: inline-block;
+  margin-bottom: 47px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* ---------- Услуги ----------------*/
+
+.services {
+  padding-top: 80px;
+  padding-bottom: 95px;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns:300px 300px 300px;
+  column-gap: 100px;
+  align-items: center;
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+
 .service-title {
   text-transform: uppercase;
   font-size: 24px;
@@ -404,13 +430,7 @@ justify-content: space-between;
   margin-bottom: 49px;
 }
 
-.about-company {
-  display: flex;
-  align-items: center;
-  list-style: none; 
-  min-width: 1200px;
-  padding-bottom: 73px;
-}
+/* ---------- Горизонтальные разделители ----------------*/
 
 .border {
   position: relative;
@@ -423,6 +443,16 @@ justify-content: space-between;
   left: 20px;
   right: 20px;
   border: 1px solid var(--light-grey);
+}
+
+/* ---------- О компании ----------------*/
+
+.about-company {
+  display: flex;
+  align-items: center;
+  list-style: none; 
+  min-width: 1200px;
+  padding-bottom: 73px;
 }
 
 .about {
@@ -535,6 +565,8 @@ justify-content: space-between;
   max-width: 135px;
 }
 
+/* ---------- Партнеры ----------------*/
+
 .main-partners {
   padding-top: 46px;
   padding-bottom: 44px;
@@ -606,6 +638,8 @@ justify-content: space-between;
   opacity: 0.1;
 }
 
+/* ---------- Контакты ----------------*/
+
 .contacts {
   display: flex;
   flex-direction: column;
@@ -660,13 +694,7 @@ a.address {
   min-width: 230px;
 }
 
-.write-us-button {
-  min-width: 219px;
-  display: inline-block;
-  margin-bottom: 47px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
+/* ---------- Footer ----------------*/
 
 .main-footer {
   display:flex;
@@ -746,6 +774,8 @@ a.address {
   margin: 0;
 }
 
+/* ---------- Попап ----------------*/
+
 .popup{
   width: 960px;
   min-height: 590px;
@@ -813,6 +843,54 @@ textarea {
   color: var(--black);
   margin-bottom: 9px;
 }
+.popup-button {
+   min-width: 259px;
+  margin-bottom: 84px;
+}
+  
+.close-button {
+  opacity: 0.3;
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+  
+.close-button::before,
+.close-button::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 21px;
+  height: 3px;
+  background-color: var(--light-red);
+}
+  
+.close-button::before {
+  transform: rotate(45deg);
+}
+  
+.close-button::after {
+  transform: rotate(-45deg);
+}
+  
+.close-button:hover,
+.close-button:focus {
+   color: var(--light-red);
+  opacity: 1;
+}
+  
+.close-button:active {
+  color: var(--light-red);
+  opacity: 0.1;
+}
+
+/* ---------- Фильтр и каталог ----------------*/
 
 input[type="text"],
 input[type="email"] {
@@ -833,53 +911,6 @@ input[type="text"]:focus,
 textarea:focus,
 input[type="email"]:focus {
   opacity: 1;
-}
-
-.popup-button {
-  min-width: 259px;
-  margin-bottom: 84px;
-}
-
-.close-button {
-  opacity: 0.3;
-  position: absolute;
-  top: 78px;
-  right: 90px;
-  width: 21px;
-  height: 21px;
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
-  }
-
-.close-button::before,
-.close-button::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 2px;
-  width: 21px;
-  height: 3px;
-  background-color: var(--light-red);
-}
-
-.close-button::before {
-  transform: rotate(45deg);
-}
-
-.close-button::after {
-  transform: rotate(-45deg);
-}
-
-.close-button:hover,
-.close-button:focus {
-  color: var(--light-red);
-  opacity: 1;
-}
-
-.close-button:active {
-  color: var(--light-red);
-  opacity: 0.1;
 }
 
 .text-form {
