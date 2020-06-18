@@ -845,7 +845,7 @@ textarea {
   margin-bottom: 9px;
 }
 .popup-button {
-   min-width: 259px;
+  min-width: 259px;
   margin-bottom: 84px;
 }
   
@@ -882,7 +882,7 @@ textarea {
   
 .close-button:hover,
 .close-button:focus {
-   color: var(--light-red);
+  color: var(--light-red);
   opacity: 1;
 }
   
@@ -1391,4 +1391,16 @@ input[type="email"]:focus {
   box-sizing: border-box;
   border-radius: 3px;
   padding: 14px 17px 12px;
+}
+
+/* ---------- Карта ----------------*/
+
+.map {
+  width: 100%;
+  min-height: auto;
+  position: relative;
+}
+
+.map img {
+  display: block;
 }
