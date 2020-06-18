@@ -46,6 +46,7 @@
 
 /* ---------- Цвета ----------------*/
 :root {
+  --grey: #C1C1C1;
   --light-grey: #EEEEEE;
   --medium-grey: #DFDFDF;
   --dark-grey: #D5D5D5;
@@ -267,7 +268,7 @@ justify-content: space-between;
   width: 8px;
   height: 8px;
   background-color: transparent;
-  border: 2px solid var(--light-grey);
+  border: 2px solid var(--grey);
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
@@ -1376,7 +1377,7 @@ input[type="email"]:focus {
   color: var(--black);
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .pagination-item:hover,
