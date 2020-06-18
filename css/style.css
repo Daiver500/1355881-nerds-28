@@ -1404,3 +1404,7 @@ input[type="email"]:focus {
 .map img {
   display: block;
 }
+
+.map iframe {
+  border: none;
+}
