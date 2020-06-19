@@ -13,11 +13,11 @@ closePopup.addEventListener("click", function () {
 });*/
 
 openPopup.onclick = function () {
-    evt.preventDefault(); 
+    /*evt.preventDefault();*/
     popupForm.classList.add(".popup-show");
 };
 
 closePopup.onclick = function () {
-    evt.preventDefault(); 
+    /*evt.preventDefault(); */
     popupForm.classList.remove(".popup-show");
 };
