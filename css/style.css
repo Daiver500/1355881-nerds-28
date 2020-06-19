@@ -790,7 +790,11 @@ a.address {
   color: var(--black);
   background-color: var(--white);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  /*display:none;*/
+  display:none;
+}
+
+.popup-show {
+  display:block;
 }
 
 .popup-header {
