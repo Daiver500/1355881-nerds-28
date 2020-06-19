@@ -1375,6 +1375,11 @@ input[type="email"]:focus {
   margin-left: 80px;
 }
 
+.pagination {
+  margin-bottom: 80px;
+
+}
+
 .pagination-item {
   min-width: 50px;
   background-color: var(--light-grey);
@@ -1401,13 +1406,13 @@ input[type="email"]:focus {
 
 .map {
   width: 100%;
-  min-height: auto;
-  position: relative;
+  height: 100%;
+  position: absolute;
 }
 
-.map img {
+/*.map img {
   display: block;
-}
+}*/
 
 .map iframe {
   border: none;
