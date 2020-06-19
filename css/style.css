@@ -790,7 +790,7 @@ a.address {
   color: var(--black);
   background-color: var(--white);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  display:none;
+  /*display:none;*/
 }
 
 .popup-show {
@@ -806,26 +806,24 @@ a.address {
   padding-top: 63px;
   padding-left: 100px;
   margin:0;
-  margin-bottom: 37px;
 }
 
 .popup-form {
   display:flex;
   flex-wrap:wrap;
+  padding: 37px 100px 84px;
 }
 
 .popup-line{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 100px;
   margin: 0;
   margin-bottom: 34px;
 }
 
 .email {
   padding-left: 40px;
-  padding-right: 100px;
 }
 
 textarea {
@@ -838,7 +836,6 @@ textarea {
 .popup-button,
 .catalog-button {
   border: none;
-  margin-left: 100px;
 }
 
 .popup-item {
@@ -850,7 +847,6 @@ textarea {
 }
 .popup-button {
   min-width: 259px;
-  margin-bottom: 84px;
 }
   
 .close-button {
@@ -895,8 +891,6 @@ textarea {
   opacity: 0.1;
 }
 
-/* ---------- Фильтр и каталог ----------------*/
-
 input[type="text"],
 input[type="email"] {
   min-width: 360px;
@@ -908,15 +902,28 @@ input[type="email"] {
   font-size: 16px;
   line-height: 18px;
   mix-blend-mode: normal;
-  opacity: 0.3;
+  opacity: 0.5;
   color: var(--medium-dark);
+  padding: 16px;
+  border: 2px solid #D7DCDE;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+input[type="text"]:hover, 
+textarea:hover,
+input[type="email"]:hover { 
+  border: 2px solid #B4B9BB;
 }
 
 input[type="text"]:focus, 
 textarea:focus,
 input[type="email"]:focus {
   opacity: 1;
+  border: 2px solid #000000;
 }
+
+/* ---------- Фильтр и каталог ----------------*/
 
 .text-form {
   font-weight: bold;
