@@ -791,6 +791,7 @@ a.address {
   background-color: var(--white);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   display:none;
+  padding: 63px 100px 84px;
 }
 
 .popup-show {
@@ -803,15 +804,13 @@ a.address {
   line-height: 53px;
   color: var(--black);
   text-align: left;
-  padding-top: 63px;
-  padding-left: 100px;
   margin:0;
+  margin-bottom: 37px;
 }
 
 .popup-form {
   display:flex;
   flex-wrap:wrap;
-  padding: 37px 100px 84px;
 }
 
 .popup-line{
