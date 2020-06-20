@@ -12,7 +12,7 @@ try {
   storage = localStorage.getItem("login");
 } catch (err) {
   isStorageSupport = false;
-}
+};
 
 openPopup.onclick = function (evt) {
     evt.preventDefault();
