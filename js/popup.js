@@ -1,12 +1,12 @@
-let openPopup = document.querySelector(".write-us-button");
-let popupSection = document.querySelector(".popup");
-let closePopup = document.querySelector(".close-button");
-let popupForm = document.querySelector(".popup-form");
-let userName = document.querySelector(".popup-name");
-let userEmail = document.querySelector(".popup-email");
+var openPopup = document.querySelector(".write-us-button");
+var popupSection = document.querySelector(".popup");
+var closePopup = popupSection.querySelector(".close-button");
+var popupForm = popupSection.querySelector(".popup-form");
+var userName = popupSection.querySelector(".popup-name");
+var userEmail = popupSection.querySelector(".popup-email");
 
-let isStorageSupport = true;
-let storage = "";
+var isStorageSupport = true;
+var storage = "";
 
 try {
   storage = localStorage.getItem("login");
@@ -14,7 +14,7 @@ try {
   isStorageSupport = false;
 };
 
-openPopup.onclick = function (evt) {
+openPopup.addEventListener("click", function (evt) {
     evt.preventDefault();
     popupSection.classList.add("popup-show");
     if (storage) {
@@ -22,15 +22,15 @@ openPopup.onclick = function (evt) {
         userEmail.focus();
   } else {
       userName.focus();}
-};
+});
 
-closePopup.onclick = function (evt) {
+closePopup.addEventListener("click", function (evt) {
     evt.preventDefault(); 
     popupSection.classList.remove("popup-show");
     popupSection.classList.remove("popup-error");
-};
+});
 
-popupForm.onsubmit = function (evt) {
+popupForm.addEventListener("submit", function (evt) {
     if (!userName.value || !userEmail.value) {
     evt.preventDefault();
     userName.classList.remove("popup-error");
@@ -43,9 +43,9 @@ popupForm.onsubmit = function (evt) {
     localStorage.setItem("login", userName.value);
     }
   }
-};
+});
 
-window.onkeydown = function (evt) {
+window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       if (popupSection.classList.contains("popup-show")) {
         evt.preventDefault();
@@ -53,4 +53,4 @@ window.onkeydown = function (evt) {
         popupSection.classList.remove("popup-error");
       }
     }
-  };
+  });

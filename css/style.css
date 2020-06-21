@@ -800,7 +800,7 @@ a.address {
 }
 
 .popup-error {
-  animation: bounce 0.6s;
+  animation: shake 0.6s;
   /*opacity: 1;
   color: var(--light-red);
   border: 2px solid var(--light-red);*/
