@@ -33,12 +33,10 @@ closePopup.addEventListener("click", function (evt) {
 popupForm.addEventListener("submit", function (evt) {
     if (!userName.value || !userEmail.value) {
     evt.preventDefault();
-    userName.classList.remove("popup-error");
-    userEmail.classList.remove("popup-error");
+    popupSection.classList.remove("popup-error");
     popupSection.offsetWidth = popupSection.offsetWidth;
-    userName.classList.add("popup-error");
-    userEmail.classList.add("popup-error");
-  } else {
+    popupSection.classList.add("popup-error");
+    } else {
     if (isStorageSupport) {
     localStorage.setItem("login", userName.value);
     }
