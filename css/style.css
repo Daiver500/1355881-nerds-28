@@ -356,6 +356,8 @@ a {
 .slider-button {
   min-width: 240px;
   text-transform: none;
+  padding-left: 54px;
+  padding-right: 54px;
 }
 
 .button:hover,
@@ -403,8 +405,9 @@ a {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 47px;
+  padding-left: 44px;
+  padding-right: 44px;
   margin-left: 50px;
-  margin-right: 50px;
 }
 
 /* ---------- Услуги ----------------*/
@@ -508,7 +511,7 @@ a {
 .about-item::before {
   content: "";
   position: absolute;
-  bottom: 9px;
+  bottom: 10px;
   left: -35px;
   width: 25px;
   border: 1px solid var(--light-red);
@@ -863,6 +866,8 @@ textarea {
 }
 .popup-button {
   min-width: 259px;
+  padding-left: 83px;
+  padding-right: 83px;
 }
 
 .close-button {
@@ -1334,19 +1339,38 @@ input[type="email"]:focus {
   border-radius: inherit;
 }
 
+.filter-button {
+  min-width: 260px;
+  padding-left: 88px;
+  padding-right: 89px;
+  background-color: var(--light-grey);
+  color: var(--black);
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+}
+
 .catalog-button {
   min-width: 260px;
   background-color: var(--light-grey);
   color: var(--black);
   margin-left: 8px;
+  padding-left: 78px;
+  padding-right: 77px;
 }
 
 .catalog-button:hover,
-.catalog-button:focus {
+.catalog-button:focus,
+.filter-button:hover,
+.filter-button:active {
   background-color: var(--extra-light-grey);
 }
 
-.catalog-button:active {
+.catalog-button:active,
+.filter-button:active {
   background-color: var(--twice-extra-light-grey);
 }
 
