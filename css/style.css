@@ -1,21 +1,21 @@
 /* ---------- Шрифты----------------*/
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), /* Super Modern Browsers */ url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff"); /* Modern Browsers */
 }
 /* roboto-500 - latin_cyrillic */
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;;
   font-style: normal;
   font-weight: 500;
   src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2"), /* Super Modern Browsers */ url("../fonts/roboto-v20-latin_cyrillic-500.woff") format("woff"); /* Modern Browsers */
 }
 /* roboto-700 - latin_cyrillic */
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), /* Super Modern Browsers */ url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff"); /* Modern Browsers */
@@ -122,7 +122,7 @@ a {
   opacity: 1;
 }
 
-.main-header-logo:active {
+.main-header-logo-catalog:active {
   opacity: 0.3;
 }
 
@@ -130,7 +130,7 @@ a {
   list-style: none;
   padding: 0;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin: 0;
   padding-top: 27px;
 }
@@ -390,6 +390,7 @@ a {
 .write-us-button {
   min-width: 219px;
   display: inline-block;
+  vertical-align: top;
   margin-bottom: 47px;
   margin-left: 50px;
   margin-right: 50px;
@@ -406,7 +407,7 @@ a {
   display: grid;
   grid-template-columns: 300px 300px 300px;
   column-gap: 100px;
-  align-items: center;
+  align-items: start;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -447,7 +448,7 @@ a {
 
 .about-company {
   display: flex;
-  align-items: center;
+  align-items: start;
   list-style: none;
   min-width: 1200px;
   padding-bottom: 73px;
@@ -576,7 +577,7 @@ a {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -712,6 +713,7 @@ a.address {
   background-color: var(--light-grey);
   border-radius: 50%;
   display: inline-block;
+  vertical-align: top;
   margin-right: 9px;
   margin-top: 68px;
 }
@@ -928,6 +930,7 @@ input[type="email"]:focus {
 
 /* ---------- Фильтр и каталог ----------------*/
 
+
 .text-form {
   font-weight: bold;
   font-size: 18px;
@@ -978,12 +981,12 @@ input[type="email"]:focus {
 .range-controls {
   position: relative;
   height: 41px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
   margin-bottom: 15px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #f1f1f1;
-  border-radius: 5px;
   box-sizing: content-box;
 }
 
@@ -993,7 +996,7 @@ input[type="email"]:focus {
 }
 
 .range-controls .bar {
-  width: 70%;
+  width: 80%;
   height: 2px;
   background: #00ca74;
 }
@@ -1010,6 +1013,7 @@ input[type="email"]:focus {
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   cursor: pointer;
+  box-sizing: content-box;
 }
 
 .range-controls .toggle-min {
@@ -1036,7 +1040,7 @@ input[type="email"]:focus {
   padding: 10px;
   margin-left: 10px;
   text-align: center;
-  color: #283136;
+  color: var(--dark);
   border: none;
   border-radius: 5px;
   background: #f1f1f1;
@@ -1172,7 +1176,7 @@ input[type="email"]:focus {
 
 .sort-catalog {
   padding-top: 55px;
-  min-width: 759px;
+  width: 770px;
 }
 
 .sort-container {
@@ -1212,6 +1216,10 @@ input[type="email"]:focus {
   opacity: 0.6;
 }
 
+.sort-link:active {
+  opacity: 1;
+}
+
 .sort-link.active {
   color: var(--black);
   opacity: 1;
@@ -1223,7 +1231,7 @@ input[type="email"]:focus {
   width: 20px;
   height: 20px;
   background-color: var(--white);
-  opacity: 0.3;
+  opacity: 0.2;
   border: none;
 }
 
@@ -1239,6 +1247,18 @@ input[type="email"]:focus {
   background-position: center;
 }
 
+.up:hover,
+.down:hover,
+.up:focus,
+.down:focus {
+  opacity: 0.6;
+}
+
+.up:active,
+.down:active {
+  opacity: 1;
+}
+
 .triangle.active {
   color: var(--black);
   opacity: 1;
@@ -1250,7 +1270,7 @@ input[type="email"]:focus {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  min-width: 900px;
+  min-width: 770px;
   margin-bottom: 25px;
 }
 
@@ -1345,7 +1365,7 @@ input[type="email"]:focus {
   min-width: 360px;
   min-height: 231px;
   background-color: var(--light-grey);
-  max-height: 231px;
+  max-height: 580px;
   box-sizing: content-box;
   position: absolute;
   top: 388px;
@@ -1390,16 +1410,29 @@ input[type="email"]:focus {
 
 .pagination-item {
   min-width: 50px;
+  min-height: 50px;
   background-color: var(--light-grey);
   color: var(--black);
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 17px;
+  padding-bottom: 15px;
   margin-right: 8px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .pagination-item:hover,
 .pahination-item:focus {
   background-color: var(--extra-light-grey);
+}
+
+.pagination-item:active {
+  background: var(--dark-grey);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  border-radius: 3px;
 }
 
 .pagination-item.active {
