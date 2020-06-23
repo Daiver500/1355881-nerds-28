@@ -183,6 +183,10 @@ a {
   top: 33px;
 }
 
+.bin::before:active{
+  opacity:1;
+}
+
 .main-title {
   text-align: center;
   min-width: 745px;
