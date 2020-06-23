@@ -164,8 +164,8 @@ a {
   color: var(--light-red);
 }
 
-.nav-link:active,
-.bin:active {
+.nav-link:active
+/*.bin:active*/ {
   color: var(--black);
   mix-blend-mode: normal;
   opacity: 0.3;
