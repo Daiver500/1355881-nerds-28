@@ -183,8 +183,8 @@ a {
   top: 33px;
 }
 
-.bin::before:active{
-  opacity:1;
+.bin:active::before {
+  opacity: 1;
 }
 
 .main-title {
