@@ -144,6 +144,11 @@ a {
   padding-bottom: 13px;
 }
 
+.bin.active {
+  border-bottom: 2px solid var(--light-red);
+  padding-bottom: 13px;
+}
+
 .nav-item:not(:last-child) {
   margin-right: 44px;
 }
@@ -166,9 +171,15 @@ a {
   opacity: 0.3;
 }
 
+.bin:active::before {
+  opacity: 1;
+}
+
 .bin {
   position: relative;
   padding-top: 27px;
+  min-width: 110px;
+  padding-left: 30px;
 }
 
 .bin::before {
@@ -181,10 +192,6 @@ a {
   background-position: 0 0;
   right: 100px;
   top: 33px;
-}
-
-.bin:active::before {
-  opacity: 1;
 }
 
 .main-title {
