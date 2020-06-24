@@ -317,6 +317,7 @@ a {
   padding-right: 622px;
   margin-bottom: 25px;
   padding-left: 5px;
+  letter-spacing: 0.5px;
 }
 
 .under-slider-main {
@@ -324,6 +325,7 @@ a {
   padding-right: 740px;
   margin: 0;
   margin-bottom: 55px;
+  letter-spacing: 0.1px;
 }
 
 .slider-title-second {
@@ -456,6 +458,7 @@ a {
   margin: 0;
   padding-top: 18px;
   margin-bottom: 16px;
+  letter-spacing: -0.9px;
 }
 
 .service-description {
