@@ -63,6 +63,11 @@
   --for-shop: #4d4d4d;
   --extra-light-grey: #dfdfdf;
   --twice-extra-light-grey: #d5d5d5;
+  --color-1: #d7dcde;
+  --color-2:#b4b9bb;
+  --color-3:#f1f1f1;
+  --color-4:#ababab;
+  --color-5: #cfcfcf;
 }
 
 html {
@@ -961,7 +966,7 @@ input[type="email"] {
   opacity: 0.5;
   color: var(--medium-dark);
   padding: 16px;
-  border: 2px solid #d7dcde;
+  border: 2px solid var(--color-1);
   box-sizing: border-box;
   border-radius: 3px;
 }
@@ -969,14 +974,14 @@ input[type="email"] {
 input[type="text"]:hover,
 textarea:hover,
 input[type="email"]:hover {
-  border: 2px solid #b4b9bb;
+  border: 2px solid var(--color-2);
 }
 
 input[type="text"]:focus,
 textarea:focus,
 input[type="email"]:focus {
   opacity: 1;
-  border: 2px solid #000000;
+  border: 2px solid var(--black);
 }
 
 /* ---------- Фильтр и каталог ----------------*/
@@ -1032,7 +1037,7 @@ input[type="email"]:focus {
 .range-controls {
   position: relative;
   height: 41px;
-  background-color: #f1f1f1;
+  background-color: var(--color-3);
   border-radius: 5px;
   margin-bottom: 15px;
   padding-top: 39px;
@@ -1043,13 +1048,13 @@ input[type="email"]:focus {
 
 .range-controls .scale {
   height: 2px;
-  background: #d7dcde;
+  background: var(--color-1);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-  background: #00ca74;
+  background: var(--light-green);
 }
 
 .range-controls .toggle {
@@ -1059,10 +1064,10 @@ input[type="email"]:focus {
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
+  border: 8px solid var(--white);
+  background-color: var(--color-4);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 var(--color-5);
   cursor: pointer;
   box-sizing: content-box;
 }
@@ -1096,7 +1101,7 @@ input[type="email"]:focus {
   color: var(--dark);
   border: none;
   border-radius: 5px;
-  background: #f1f1f1;
+  background: var(--color-3);
   font-family: inherit;
   font-size: inherit;
 }
