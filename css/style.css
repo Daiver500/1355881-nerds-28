@@ -215,9 +215,9 @@ a {
 .main-title {
   text-align: center;
   min-width: 745px;
-  padding-top: 72px;
+  padding-top: 69px;
   padding-bottom: 108px;
-  padding-right: 248px;
+  padding-right: 288px;
   padding-left: 247px;
   min-height: 55px;
   background-color: var(--light-grey);
@@ -994,6 +994,7 @@ input[type="email"]:focus {
   color: var(--black);
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 15px;
 }
 
 .text-for-form {
@@ -1018,6 +1019,7 @@ input[type="email"]:focus {
   padding: 0;
   border: none;
   box-sizing: content-box;
+  margin-bottom: 5px;
 }
 
 .range-filter {
@@ -1107,8 +1109,10 @@ input[type="email"]:focus {
 }
 
 .radio-item {
-  margin-bottom: 46px;
+  margin-bottom: 30px;
   border: none;
+  padding: 0;
+  padding-left: 0;
 }
 
 .radio-form {
@@ -1167,13 +1171,14 @@ input[type="email"]:focus {
 
 .checkbox-item {
   border: none;
+  padding:0;
 }
 
 .checkbox-form {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-bottom: 34px;
+  margin-bottom: 27px;
 }
 
 .checkbox-line {
@@ -1229,7 +1234,7 @@ input[type="email"]:focus {
 }
 
 .main-filter {
-  padding-top: 55px;
+  padding-top: 59px;
 }
 
 .sort-catalog {
