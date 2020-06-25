@@ -137,8 +137,12 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding-top: 27px;
-  padding-right: 49px;
+  padding-top: 26px;
+  padding-right: 38px;
+}
+
+.user-navigation {
+  margin-top: -2px;
 }
 
 .nav-link {
@@ -195,8 +199,8 @@ a {
 .bin {
   position: relative;
   padding-top: 27px;
-  min-width: 110px;
-  padding-left: 35px;
+  /*min-width: 110px;*/
+  padding-left: 45px;
 }
 
 .bin::before {
@@ -313,11 +317,11 @@ a {
 
 .slider-title-main {
   min-width: 538px;
-  padding-top: 78px;
+  padding-top: 80px;
   padding-right: 622px;
-  margin-bottom: 27px;
-  padding-left: 5px;
-  letter-spacing: 0.5px;
+  margin-bottom: 25px;
+  /*padding-left: 5px;*/
+  letter-spacing: 1.1px;
 }
 
 .under-slider-main {
@@ -457,12 +461,12 @@ a {
   font-weight: bold;
   color: var(--black);
   margin: 0;
-  padding-top: 18px;
+  padding-top: 20px;
   margin-bottom: 16px;
 }
 
 .service-item:first-child .service-title {
-  letter-spacing: -1.4px;
+  letter-spacing: -1.1px;
 }
 
 .service-item:nth-child(2) .service-title {
@@ -479,11 +483,12 @@ a {
 }
 
 .service-item:first-child .service-description {
-  word-spacing: 1px;
+  letter-spacing: 0.2px;
 }
 
 .service-item:nth-child(2) .service-description {
-  word-spacing: -0.2px;
+  word-spacing: 0.1px;
+  letter-spacing: 0.1px;
 }
 
 .service-item:last-child .service-description {
@@ -500,14 +505,14 @@ a {
 .border::after {
   content: "";
   position: absolute;
-  bottom: 2px;
+  bottom: 3px;
   left: 20px;
   right: 20px;
   border: 1px solid var(--light-grey);
 }
 
 .main-partners.border::after {
-  bottom: 5px;
+  bottom: 9px;
 }
 
 /* ---------- О компании ----------------*/
@@ -533,11 +538,11 @@ a {
   color: var(--black);
   min-width: 651px;
   margin: 0;
-  padding-top: 73px;
+  padding-top: 71px;
   margin-bottom: 32px;
-  padding-right: 30px;
-  letter-spacing: -0.5px;
-  word-spacing: 11px;
+  padding-right: 45px;
+  letter-spacing: 0.9px;
+  word-spacing: 2px;
 }
 
 .about-list {
@@ -600,12 +605,12 @@ a {
   flex-wrap: wrap;
   min-width: 374px;
   min-height: 412px;
-  padding-top: 39px;
+  padding-top: 37px;
 }
 
 .table img {
-  padding-left: 20px;
-  margin-bottom: 37px;
+  padding-left: 14px;
+  margin-bottom: 36px;
 }
 
 .table-header {
@@ -615,7 +620,9 @@ a {
   color: var(--black);
   min-width: 358px;
   margin-bottom: 28px;
-  padding-left: 27px;
+  padding-left: 22px;
+  word-spacing: -0.4px;
+  letter-spacing: -0.4px;
 }
 
 .table-item-description {
@@ -624,8 +631,12 @@ a {
   line-height: 64px;
   color: var(--black);
   /*margin-bottom: 10px;*/
-  padding-left: 11px;
-  padding-bottom: 7px;
+  padding-left: 13px;
+  padding-bottom: 8px;
+}
+
+.table-item-description:nth-child(2){
+  padding-left: 18px;
 }
 
 .percent {
@@ -633,7 +644,7 @@ a {
   font-size: 26px;
   line-height: 40px;
   color: var(--black);
-  font-size: 50%;
+  font-size: 60%;
 }
 
 .table-item {
@@ -646,10 +657,12 @@ a {
 
 .table-item:first-child {
   max-width: 119px;
+  padding-left: 11px;
 }
 
 .table-item:nth-child(2) {
   max-width: 125px;
+  padding-left: 15px;
 }
 
 .table-item:last-child {
@@ -701,6 +714,14 @@ a {
 
 .partners-item:nth-child(1) {
   margin-top: 5px;
+}
+
+.partners-item:nth-child(2) {
+  margin-top: -3px;
+}
+
+.partners-item:nth-child(3) {
+  margin-top: -9px;
 }
 
 .partners-item:not(:last-child)::after {
@@ -861,7 +882,7 @@ a.address {
   margin-top: 0;
   padding-top: 7px;
   min-width: 660px;
-  padding-top: 95px;
+  padding-top: 93px;
   letter-spacing: -1px;
 }
 
