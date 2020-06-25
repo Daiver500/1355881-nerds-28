@@ -64,9 +64,9 @@
   --extra-light-grey: #dfdfdf;
   --twice-extra-light-grey: #d5d5d5;
   --color-1: #d7dcde;
-  --color-2:#b4b9bb;
-  --color-3:#f1f1f1;
-  --color-4:#ababab;
+  --color-2: #b4b9bb;
+  --color-3: #f1f1f1;
+  --color-4: #ababab;
   --color-5: #cfcfcf;
 }
 
@@ -154,7 +154,6 @@ a {
   border-bottom: 2px solid var(--light-red);
   padding-bottom: 13px;
 }
-
 
 .nav-item:first-child {
   padding-right: 44px;
@@ -508,7 +507,7 @@ a {
 }
 
 .main-partners.border::after {
-   bottom: 5px;
+  bottom: 5px;
 }
 
 /* ---------- О компании ----------------*/
@@ -700,7 +699,7 @@ a {
   position: relative;
 }
 
-.partners-item:nth-child(1){
+.partners-item:nth-child(1) {
   margin-top: 5px;
 }
 
@@ -1033,7 +1032,6 @@ input[type="email"]:focus {
 
 /* ---------- Фильтр и каталог ----------------*/
 
-
 .text-form {
   font-weight: bold;
   font-size: 18px;
@@ -1225,7 +1223,7 @@ input[type="email"]:focus {
 
 .checkbox-item {
   border: none;
-  padding:0;
+  padding: 0;
   letter-spacing: -1.3px;
 }
 
@@ -1306,7 +1304,6 @@ input[type="email"]:focus {
 
 .main-sort {
   display: flex;
-  word-spacing: -8px;
 }
 
 .sort {
@@ -1326,9 +1323,9 @@ input[type="email"]:focus {
   padding-right: 25px;
 }
 
-.sort-link:last-child {
+/*.sort-link:last-child {
   padding-right: 29px;
-}
+}*/
 
 .sort-link:hover,
 .sort-link:focus {
@@ -1346,7 +1343,7 @@ input[type="email"]:focus {
 
 .up-down button {
   padding: 0px;
-  margin-left: 18px;
+  margin-left: 12px;
   width: 20px;
   height: 20px;
   background-color: var(--white);
@@ -1486,7 +1483,7 @@ input[type="email"]:focus {
   color: var(--black);
   text-transform: uppercase;
   margin: 0;
-  padding-top:26px;
+  padding-top: 26px;
   margin-bottom: 12px;
 }
 
@@ -1517,7 +1514,7 @@ input[type="email"]:focus {
   padding-left: 145px;
   padding-right: 144px;
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: content-box;
 }
 
