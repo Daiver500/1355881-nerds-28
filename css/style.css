@@ -217,10 +217,11 @@ a {
   min-width: 745px;
   padding-top: 69px;
   padding-bottom: 108px;
-  padding-right: 288px;
+  padding-right: 257px;
   padding-left: 247px;
   min-height: 55px;
   background-color: var(--light-grey);
+  letter-spacing: 1px;
 }
 /* ---------- Слайдер ----------------*/
 
@@ -251,19 +252,19 @@ a {
 
 .slider-one {
   background-image: url(../img/slide1.png);
-  background-position-x: 396px;
+  background-position-x: 397px;
   background-position-y: 0;
 }
 
 .slider-two {
   background-image: url(../img/slide2.png);
-  background-position-x: 396px;
+  background-position-x: 397px;
   background-position-y: 0;
 }
 
 .slider-three {
   background-image: url(../img/slide3.png);
-  background-position-x: 396px;
+  background-position-x: 397px;
   background-position-y: 0;
 }
 
@@ -315,7 +316,7 @@ a {
   min-width: 538px;
   padding-top: 78px;
   padding-right: 622px;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   padding-left: 5px;
   letter-spacing: 0.5px;
 }
@@ -325,7 +326,8 @@ a {
   padding-right: 740px;
   margin: 0;
   margin-bottom: 55px;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.3px;
+  word-spacing: -1px;
 }
 
 .slider-title-second {
@@ -367,8 +369,8 @@ a {
   color: var(--white);
   background: var(--light-red);
   border-radius: 3px;
-  padding-top: 18px;
-  padding-bottom: 15px;
+  padding-top: 17px;
+  padding-bottom: 16px;
   padding-left: 15px;
   padding-right: 15px;
   padding-left: 39px;
@@ -458,12 +460,36 @@ a {
   margin: 0;
   padding-top: 18px;
   margin-bottom: 16px;
-  letter-spacing: -0.9px;
+}
+
+.service-item:first-child .service-title {
+  letter-spacing: -1.4px;
+}
+
+.service-item:nth-child(2) .service-title {
+  letter-spacing: -0.5px;
+}
+
+.service-item:last-child .service-title {
+  letter-spacing: -0.8px;
 }
 
 .service-description {
   margin: 0;
   margin-bottom: 46px;
+}
+
+.service-item:first-child .service-description {
+  word-spacing: 1px;
+}
+
+.service-item:nth-child(2) .service-description {
+  word-spacing: -0.2px;
+}
+
+.service-item:last-child .service-description {
+  word-spacing: -0.8px;
+  letter-spacing: 0.4px;
 }
 
 /* ---------- Горизонтальные разделители ----------------*/
@@ -475,7 +501,7 @@ a {
 .border::after {
   content: "";
   position: absolute;
-  bottom: 3px;
+  bottom: 2px;
   left: 20px;
   right: 20px;
   border: 1px solid var(--light-grey);
@@ -510,7 +536,9 @@ a {
   margin: 0;
   padding-top: 73px;
   margin-bottom: 32px;
-  padding-right: 125px;
+  padding-right: 30px;
+  letter-spacing: -0.5px;
+  word-spacing: 11px;
 }
 
 .about-list {
@@ -525,8 +553,10 @@ a {
 .about-about {
   margin: 0;
   min-width: 646px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   padding-right: 155px;
+  letter-spacing: 0.2px;
+  word-spacing: 0.2px;
 }
 
 .about-item {
@@ -534,6 +564,18 @@ a {
   margin-bottom: 24px;
   padding-left: 4px;
   position: relative;
+}
+
+.about-item:first-child {
+  word-spacing: 0.1px;
+}
+
+.about-item:nth-child(2) {
+  word-spacing: 0.5px;
+}
+
+.about-item:last-child {
+  word-spacing: 0.6px;
 }
 
 .about-item::before {
@@ -551,6 +593,7 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   min-width: 306px;
+  letter-spacing: -0.7px;
 }
 
 .table {
@@ -820,6 +863,7 @@ a.address {
   padding-top: 7px;
   min-width: 660px;
   padding-top: 95px;
+  letter-spacing: -1px;
 }
 
 .offer {
@@ -997,13 +1041,18 @@ input[type="email"]:focus {
   color: var(--black);
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
+}
+
+.sort-container .text-form {
+  letter-spacing: -0.6px;
 }
 
 .text-for-form {
   font-size: 16px;
   line-height: 19px;
   margin-bottom: 49px;
+  letter-spacing: 1px;
 }
 
 .text-for-form:disabled {
@@ -1037,6 +1086,7 @@ input[type="email"]:focus {
   text-transform: uppercase;
   font-weight: 700;
   box-sizing: content-box;
+  letter-spacing: -0.4px;
 }
 
 .range-controls {
@@ -1116,6 +1166,7 @@ input[type="email"]:focus {
   border: none;
   padding: 0;
   padding-left: 0;
+  letter-spacing: -1.4px;
 }
 
 .radio-form {
@@ -1175,6 +1226,7 @@ input[type="email"]:focus {
 .checkbox-item {
   border: none;
   padding:0;
+  letter-spacing: -1.3px;
 }
 
 .checkbox-form {
@@ -1247,13 +1299,14 @@ input[type="email"]:focus {
 
 .sort-container {
   max-height: 31px;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   display: flex;
   justify-content: space-between;
 }
 
 .main-sort {
   display: flex;
+  word-spacing: -8px;
 }
 
 .sort {
@@ -1346,7 +1399,7 @@ input[type="email"]:focus {
 }
 
 .catalog-item {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   padding-top: 41px;
   display: flex;
   flex-direction: column;
@@ -1405,7 +1458,6 @@ input[type="email"]:focus {
   min-width: 260px;
   background-color: var(--light-grey);
   color: var(--black);
-  margin-left: 8px;
   padding-left: 78px;
   padding-right: 77px;
 }
@@ -1434,6 +1486,8 @@ input[type="email"]:focus {
   color: var(--black);
   text-transform: uppercase;
   margin: 0;
+  padding-top:26px;
+  margin-bottom: 12px;
 }
 
 .product-name:hover,
@@ -1463,6 +1517,7 @@ input[type="email"]:focus {
   padding-left: 145px;
   padding-right: 144px;
   margin: 0;
+  padding:0;
   box-sizing: content-box;
 }
 
@@ -1484,8 +1539,8 @@ input[type="email"]:focus {
 
 .price-button {
   min-width: 250px;
-  padding-left: 72px;
-  padding-right: 72px;
+  padding-left: 71px;
+  padding-right: 82px;
   margin-left: 80px;
 }
 
