@@ -1671,13 +1671,15 @@ input[type="email"]:focus {
   position: absolute;
 }
 
-/*.map img {
+.map img {
 display: block;
-}*/
+}
 
 .map iframe {
   border: none;
-}
+  width: 100%;
+  height: 100%;
+ }
 
 /* --------Анимация----- */
 
