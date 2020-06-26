@@ -1456,7 +1456,7 @@ input[type="email"]:focus {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  min-width: 770px;
+  min-width: 765px;
   margin-bottom: 22px;
 }
 
@@ -1553,8 +1553,10 @@ input[type="email"]:focus {
   color: var(--black);
   text-transform: uppercase;
   margin: 0;
-  padding-top: 26px;
+  padding-top: 28px;
   margin-bottom: 12px;
+  padding-left: 3px;
+  letter-spacing: -1.1px;
 }
 
 .product-name:hover,
@@ -1595,19 +1597,21 @@ input[type="email"]:focus {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  width: 255px;
+  justify-content: center;
+  min-width: 255px;
   margin: 0;
-  padding-left: 52px;
+  padding-left: 47px;
   padding-right: 53px;
-  margin-bottom: 49px;
+  margin-bottom: 48px;
   box-sizing: content-box;
+  letter-spacing: -0.6px;
+  word-spacing: 5.1px;
 }
 
 .price-button {
   min-width: 250px;
   padding-left: 71px;
-  padding-right: 82px;
+  padding-right: 81px;
   margin-left: 80px;
 }
 
