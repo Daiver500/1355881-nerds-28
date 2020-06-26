@@ -640,7 +640,7 @@ a {
   padding-bottom: 8px;
 }
 
-.table-item-description:nth-child(2) {
+.table-item-description:nth-child(2){
   padding-left: 18px;
 }
 
@@ -826,7 +826,6 @@ a.address {
 
 .main-footer {
   display: flex;
-  margin-bottom: 68px;
 }
 
 .social-list {
@@ -837,11 +836,11 @@ a.address {
   padding: 0;
 }
 
-.social-item:first-child {
+.social-item:first-child{
   padding-right: 12px;
 }
 
-.social-item:nth-child(2) {
+.social-item:nth-child(2){
   padding-right: 10px;
 }
 
@@ -853,7 +852,7 @@ a.address {
   display: inline-block;
   vertical-align: top;
   /*margin-right: 9px;
-margin-top: 90px;*/
+  margin-top: 90px;*/
 }
 
 .vk img {
@@ -993,7 +992,7 @@ textarea {
   letter-spacing: -0.1px;
 }
 
-.popup-item textarea {
+.popup-item textarea{
   letter-spacing: -0.2px;
 }
 
@@ -1051,7 +1050,7 @@ input[type="email"] {
 }
 
 input[type="text"],
-textarea {
+textarea{
   letter-spacing: 0.1px;
 }
 
@@ -1221,8 +1220,8 @@ input[type="email"]:focus {
   padding: 0;
   padding-left: 0;
   letter-spacing: -1.4px;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left:0;
+  margin-right:0;
 }
 
 .radio-form {
@@ -1396,7 +1395,7 @@ input[type="email"]:focus {
 }
 
 /*.sort-link:last-child {
-padding-right: 29px;
+  padding-right: 29px;
 }*/
 
 .sort-link:hover,
@@ -1587,15 +1586,13 @@ padding-right: 29px;
   bottom: 0px;
   border-radius: 0 0 7px 7px;
   display: none;
-  border-radius: inherit;
+  /*border-radius: inherit;*/
   padding: 26px 0px 56px;
 }
 
 .product-item-info {
-  padding-left: 145px;
-  padding-right: 144px;
+  padding-left: 0 145px 0;
   margin: 0;
-  padding: 0;
   box-sizing: content-box;
 }
 
@@ -1625,7 +1622,7 @@ padding-right: 29px;
 }
 
 /*.pagination {
-margin-bottom: 80px;
+  margin-bottom: 80px;
 }*/
 
 .pagination-item {
@@ -1672,14 +1669,14 @@ margin-bottom: 80px;
 }
 
 .map img {
-  display: block;
+display: block;
 }
 
 .map iframe {
   border: none;
   width: 100%;
   height: 100%;
-}
+ }
 
 /* --------Анимация----- */
 
