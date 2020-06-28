@@ -138,8 +138,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding-top: 26px;
-  padding-right: 38px;
+  padding-top: 27px;
+  padding-right: 40px;
 }
 
 .user-navigation {
@@ -222,7 +222,7 @@ a {
   padding-top: 69px;
   padding-bottom: 108px;
   padding-right: 257px;
-  padding-left: 247px;
+  padding-left: 239px;
   min-height: 55px;
   background-color: var(--light-grey);
   letter-spacing: 1px;
@@ -321,8 +321,8 @@ a {
   padding-top: 79px;
   padding-right: 622px;
   margin-bottom: 25px;
-  /*padding-left: 5px;*/
-  letter-spacing: 1.1px;
+  padding-left: 4px;
+  letter-spacing: 0.5px;
 }
 
 .under-slider-main {
@@ -542,8 +542,8 @@ a {
   padding-top: 72px;
   margin-bottom: 33px;
   padding-right: 45px;
-  letter-spacing: 0.9px;
-  /*word-spacing: 2px;*/
+  letter-spacing: 0.6px;
+  word-spacing: 4px;
 }
 
 .about-list {
@@ -768,7 +768,7 @@ a {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: 90px;
+  margin-bottom: 64px;
 }
 
 .catalog-contacts {
@@ -1098,7 +1098,7 @@ input[type="email"]:focus {
 }
 
 .sort-container .text-form {
-  letter-spacing: -0.6px;
+  letter-spacing: -0.9px;
 }
 
 .text-for-form {
@@ -1116,7 +1116,7 @@ input[type="email"]:focus {
   width: 25.5%;
   /*max-height: 780px;*/
   display: flex;
-  padding-right: 140px;
+  padding-right: 139px;
 }
 
 .filter-item {
@@ -1139,7 +1139,7 @@ input[type="email"]:focus {
   text-transform: uppercase;
   font-weight: 700;
   box-sizing: content-box;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.9px;
 }
 
 .range-controls {
@@ -1160,9 +1160,10 @@ input[type="email"]:focus {
 }
 
 .range-controls .bar {
-  width: 80%;
   height: 2px;
   background: var(--light-green);
+  width: 65%;
+  margin-left: 5%;
 }
 
 .range-controls .toggle {
@@ -1181,11 +1182,11 @@ input[type="email"]:focus {
 }
 
 .range-controls .toggle-min {
-  left: 18px;
+  left: 7%;
 }
 
 .range-controls .toggle-max {
-  left: 160px;
+  left: 61%;
 }
 
 .price-controls {
@@ -1197,6 +1198,7 @@ input[type="email"]:focus {
   text-transform: uppercase;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
+  letter-spacing: 1px;
 }
 
 .price-controls input {
@@ -1215,7 +1217,7 @@ input[type="email"]:focus {
 }
 
 .radio-item {
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   border: none;
   padding: 0;
   padding-left: 0;
@@ -1299,8 +1301,8 @@ input[type="email"]:focus {
   padding-bottom: 16px;
 }
 
-.checkbox-line:nth-child(3) {
-  padding-bottom: 15px;
+.checkbox-line:nth-child(1) {
+  letter-spacing: 0.1px;
 }
 
 .check {
@@ -1361,12 +1363,12 @@ input[type="email"]:focus {
 .sort-catalog {
   padding-top: 55px;
   width: 765px;
-  margin-bottom: 64px;
+  margin-bottom: 63px;
 }
 
 .sort-container {
   max-height: 31px;
-  margin-bottom: 45px;
+  margin-bottom: 46px;
   display: flex;
   justify-content: space-between;
 }
@@ -1462,7 +1464,7 @@ input[type="email"]:focus {
   display: flex;
   flex-wrap: wrap;
   min-width: 765px;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 
 .catalog {
@@ -1471,7 +1473,7 @@ input[type="email"]:focus {
 }
 
 .catalog-item {
-  margin-bottom: 32px;
+  margin-bottom: 31px;
   padding-top: 41px;
   display: flex;
   flex-direction: column;
@@ -1562,8 +1564,8 @@ input[type="email"]:focus {
   text-transform: uppercase;
   margin: 0;
   /*padding-top: 28px;*/
-  margin-bottom: 12px;
-  padding-left: 3px;
+  margin-bottom: 13px;
+  /*padding-left: 3px;*/
   letter-spacing: -1.1px;
 }
 
@@ -1608,7 +1610,7 @@ input[type="email"]:focus {
   margin: 0;
   padding-left: 47px;
   padding-right: 53px;
-  margin-bottom: 48px;
+  margin-bottom: 45px;
   box-sizing: content-box;
   letter-spacing: -0.6px;
   word-spacing: 5.1px;
