@@ -824,6 +824,10 @@ a.address {
 
 /* ---------- Footer ----------------*/
 
+.footer {
+  margin-bottom: 68px;
+}
+
 .main-footer {
   display: flex;
 }
