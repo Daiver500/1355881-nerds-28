@@ -69,6 +69,10 @@
   --color-4: #ababab;
   --color-5: #cfcfcf;
   --color-6: #e1e1e1;
+  --color-red-button: #E37376;
+  --color-green-button: #4CC391;
+  --color-yellow-button: #EFCA7A;
+  --color-form-button: #959595;
 }
 
 html {
@@ -160,7 +164,15 @@ a {
   padding-bottom: 13px;
 }
 
-.nav-item:first-child {
+.nav-item:not(:last-child){
+  padding-right: 44px;
+}
+
+.nav-item:nth-child(2) {
+  padding-right: 48px;
+}
+
+/*.nav-item:first-child {
   padding-right: 44px;
 }
 .nav-item:nth-child(2) {
@@ -173,7 +185,7 @@ a {
 
 .nav-item:last-child {
   padding-right: 0px;
-}
+}*/
 
 .nav-link:link {
   color: var(--black);
@@ -396,6 +408,7 @@ a {
 .button:active {
   background-color: var(--dark-red);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: var(--color-red-button);
 }
 
 .green-button {
@@ -411,6 +424,7 @@ a {
 .green-button:active {
   background: var(--dark-green);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: var(--color-green-button);
 }
 
 .yellow-button {
@@ -426,6 +440,7 @@ a {
 .yellow-button:active {
   background: var(--dark-yellow);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: var(--color-yellow-button);
 }
 
 .write-us-button {
@@ -1553,6 +1568,7 @@ input[type="email"]:focus {
 .catalog-button:active,
 .filter-button:active {
   background-color: var(--twice-extra-light-grey);
+  color: var(--color-form-button);
 }
 
 .product-item-info:link {
@@ -1656,6 +1672,7 @@ input[type="email"]:focus {
   background: var(--dark-grey);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   border-radius: 3px;
+  color: var(--color-form-button);
 }
 
 .pagination-item.active {
