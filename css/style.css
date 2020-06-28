@@ -882,6 +882,12 @@ a.address {
   box-sizing: content-box;
 }
 
+.vk img:active,
+.fb img:active,
+.insta img:active {
+  opacity: 0.3;
+}
+
 .fb img {
   padding-top: 30px;
   padding-bottom: 26px;
