@@ -1255,34 +1255,34 @@ input[type="email"]:focus {
   width: 25px;
   height: 25px;
   margin-left: -35px;
-  background-image: url(../img/radio-off-quiet.svg);
+  background-image: url(../img/radiooffquiet.svg);
   background-repeat: no-repeat;
 }
 
 .radio_input:checked + .radio_box {
-  background-image: url(../img/radio-on-quiet.svg);
+  background-image: url(../img/radioonquiet.svg);
   background-repeat: no-repeat;
 }
 
 .radio_input:hover + .radio_box,
 .radio_input:focus + .radio_box {
-  background-image: url(../img/radio-off.svg);
+  background-image: url(../img/radiooff.svg);
   background-repeat: no-repeat;
 }
 
 .radio_input:checked:hover + .radio_box,
 .radio_input:checked:focus + .radio_box {
-  background-image: url(../img/radio-on.svg);
+  background-image: url(../img/radioon.svg);
   background-repeat: no-repeat;
 }
 
 .radio_input:disabled + .radio_box {
-  background-image: url(../img/radio-off-disabled.svg);
+  background-image: url(../img/radiooffdisabled.svg);
   background-repeat: no-repeat;
 }
 
 .radio_input:checked:disabled + .radio_box {
-  background-image: url(../img/radio-on-disabled.svg);
+  background-image: url(../img/radioondisabled.svg);
   background-repeat: no-repeat;
 }
 
@@ -1325,34 +1325,34 @@ input[type="email"]:focus {
   width: 25px;
   height: 25px;
   margin-left: -36px;
-  background-image: url(../img/checkbox-off-quiet.svg);
+  background-image: url(../img/checkboxoffquiet.svg);
   background-repeat: no-repeat;
 }
 
 .check_input:checked + .check_box {
-  background-image: url(../img/checkbox-on-quiet.svg);
+  background-image: url(../img/checkboxonquiet.svg);
   background-repeat: no-repeat;
 }
 
 .check_input:hover + .check_box,
 .check_input:focus + .check_box {
-  background-image: url(../img/checkbox-off.svg);
+  background-image: url(../img/checkboxoff.svg);
   background-repeat: no-repeat;
 }
 
 .check_input:checked:hover + .check_box,
 .check_input:checked:focus + .check_box {
-  background-image: url(../img/checkbox-on.svg);
+  background-image: url(../img/checkboxon.svg);
   background-repeat: no-repeat;
 }
 
 .check_input:disabled + .check_box {
-  background-image: url(../img/checkbox-off-disabled.svg);
+  background-image: url(../img/checkboxoffdisabled.svg);
   background-repeat: no-repeat;
 }
 
 .check_input:checked:disabled + .check_box {
-  background-image: url(../img/checkbox-on-disabled.svg);
+  background-image: url(../img/checkboxondisabled.svg);
   background-repeat: no-repeat;
 }
 
@@ -1433,13 +1433,13 @@ input[type="email"]:focus {
 }
 
 .down {
-  background-image: url(../img/icon-down.svg);
+  background-image: url(../img/icondown.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .up {
-  background-image: url(../img/icon-up.svg);
+  background-image: url(../img/iconup.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
