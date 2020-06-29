@@ -1110,6 +1110,18 @@ input[type="email"]:focus{
   border: 1px solid var(--black);
 }
 
+input[type="email"]:invalid{
+  opacity: 1;
+  border: 1px solid var(--medium-red);
+  color: var(--medium-red);
+}
+
+input[type="email"]:focus:invalid{
+  opacity: 1;
+  border: 1px solid var(--medium-red);
+  color: var(--medium-red);
+}
+
 /* ---------- Фильтр и каталог ----------------*/
 
 .text-form {
