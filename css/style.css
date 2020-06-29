@@ -1110,17 +1110,12 @@ input[type="email"]:focus{
   border: 1px solid var(--black);
 }
 
-/*input[type="email"]:invalid{
+.popup-line input[type="email"]:invalid:not(:placeholder-shown),
+.popup-line input[type="text"]:invalid:not(:placeholder-shown){
   opacity: 1;
   border: 1px solid var(--medium-red);
   color: var(--medium-red);
-}*/
-
-input:invalid:not(:placeholder-shown){
-  border: 1px solid var(--medium-red);
-  color: var(--medium-red);
 }
-
 
 /* ---------- Фильтр и каталог ----------------*/
 
@@ -1633,7 +1628,6 @@ input[type="number"] {
   bottom: 0px;
   border-radius: 0 0 7px 7px;
   /*display: none;*/
-  /*border-radius: inherit;*/
   padding: 26px 0px 56px;
   clip: rect(0 0 0 0);
   overflow: hidden;
