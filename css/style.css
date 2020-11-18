@@ -6,22 +6,8 @@
   font-weight: 400;
   src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), /* Super Modern Browsers */ url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff"); /* Modern Browsers */
 }
-/* roboto-500 - latin_cyrillic */
-@font-face {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2"), /* Super Modern Browsers */ url("../fonts/roboto-v20-latin_cyrillic-500.woff") format("woff"); /* Modern Browsers */
-}
-/* roboto-700 - latin_cyrillic */
-@font-face {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), /* Super Modern Browsers */ url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff"); /* Modern Browsers */
-}
 
-/* ---------- Пока не понял, что это, но нужно ----------------*/
+/* border-box
 *,
 *::before,
 *::after {
@@ -267,7 +253,7 @@ a {
 }
 
 .slider-one {
-  background-image: url(../img/slide1.png);
+  background-image: url(../img/illustration.png);
   background-position-x: 397px;
   background-position-y: 0;
 }
@@ -462,8 +448,9 @@ a {
 
 .service-list {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 300px 300px;
   column-gap: 100px;
+  row-gap: 100px;
   align-items: start;
   list-style: none;
   margin: 0;
